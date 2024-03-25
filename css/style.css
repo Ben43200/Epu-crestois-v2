@@ -1193,8 +1193,12 @@ h4 {
   font-weight: 500;
   opacity: 0.9;
 }
+
+
+/* ajout class css second content et padding pour remplacer le <p></br></p> de l'html ligne 152 */
+
 .second-content{
-  padding-bottom:10px;
+  padding-bottom:15px;
 }
 
 

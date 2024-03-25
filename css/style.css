@@ -1214,6 +1214,8 @@ h4 {
   border-radius: 5.76px;
   background-color: #da1671;
   margin-top: 10px;
+margin-bottom: 10px; /*proposition pour avoir le même espace en haut et en bas du button**/
+
   box-shadow: inset 0.1vw 0.1vw 0.2vw rgba(255, 255, 255, 0.6), inset -0.1vw -0.1vw 0.2vw rgba(0, 0, 0, 0.6);
 }
 

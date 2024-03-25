@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta name="description" content="Venez découvrir l'Église protestante unie du Crestois" />
+
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Église protestante unie du Crestois</title>
+    <link href="assets/images/favicon.ico" rel="shortcut icon" />
+
+    <script src="https://kit.fontawesome.com/a528402c70.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body onload="fetchAsync()">
+    <header>
+        <div class="emplacement_logo">
+            <a href="page_logo.html"><img src="./assets/images/mini_logo_epu-crestois_2022.jpg"
+                    alt="Logo de l'Église protestante unie du Crestois"
+                    title="Logo de l'Église protestante unie du Crestois" class="mini_logo" /></a>
+        </div>
+        <div class="citation" id="quote"></div>
+        <a class="lien-adresse" href="https://goo.gl/maps/HfojvAwyPoK11SiZ7" target="_blank">
+            <div class="adresse">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3 class="adresse-temple">1 Place du Temple,</br>26 400 Crest, France</h3>
+            </div>
+        </a>
+        <nav>
+            <div id="mySidenav" class="sidenav">
+                <a id="closeBtn" name="close-burger" href="#hidden" class="close">×</a>
+                <ul class="menu">
+                    <li><a href="index.html" title="Retour à la page d'accueil">Accueil</a>
+                        <ul>
+                            <li><a href="qui_sommes-nous.html" title="Qui sommes-nous ?">Qui sommes-nous ?</a></li>
+                            <li><a href="ou_nous-trouver.html" title="Où nous trouver ?">Où nous trouver ?</a></li>
+                            <li><a href="notre_association.html" title="Notre association cultuelle">Notre
+                                    association</a></li>
+                            <li><a href="devenir_membre.html" title="Comment devenir membre ?">Devenir membre</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="En relation à Dieu">En relation à Dieu</a>
+                        <ul>
+                            <li><a href="culte.html" title="Le culte">Culte</a></li>
+                            <li><a href="bapteme.html" title="Le baptême">Baptême</a></li>
+                            <li><a href="cene.html" title="La sainte Cène">Cène</a></li>
+                            <li><a href="mariage.html" title="La bénédiction de mariage">Mariage</a></li>
+                            <li><a href="service_funebre.html" title="Le service funèbre">Service funèbre</a></li>
+                            <li><a href="predications.html" title="Prédications">Prédications</a></li>
+                            <li><a href="confession_de_foi.html" title="Des confessions de foi">Confessions de foi</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="Vie de l'Église">Vie de l'Église</a>
+                        <ul>
+                            <li><a href="ecole_biblique.html" title="Le Club biblique">Le Club biblique</a></li>
+                            <li><a href="kt-cine.html" title="Le KT-ciné">KT-ciné</a></li>
+                            <li><a href="partage_biblique.html" title="Le partage biblique oecuménique">Partage
+                                    biblique</a></li>
+                            <li><a href="foyers_mixtes.html" title="Les foyers mixtes">Foyers mixtes</a></li>
+                            <li><a href="reunion_priere.html" title="Réunion de prière">Réunion de prière</a></li>
+                            <li><a href="halte_spirituelle.html" title="Haltes spirituelles">Haltes spirituelles</a>
+                            </li>
+                            <li><a href="sacre_petit_choeur.html" title="Le Sacré Petit Chœur">Sacré Petit Chœur</a>
+                            </li>
+                            <li><a href="sacre_petit_orchestre.html" title="Le Sacré Petit Orchestre">Sacré Petit
+                                    Orchestre</a></li>
+                            <li><a href="aumonerie_hopital.html" title="L'aumônerie hospitalière">Aumônerie
+                                    hospitalière</a>
+                            </li>
+                            <li><a href="visite.html" title="Le groupe des visites">Visites</a></li>
+                            <li><a href="atelier_creatif.html" title="Atelier créatif">Atelier créatif</a></li>
+                            <li><a href="fetes.html" title="Les fêtes">Fêtes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="Les associations partenaires">Nos partenaires</a>
+                        <ul>
+                            <li><a href="entraide.html" title="L'Entraide Fraternelle Protestante">Entraide</a></li>
+                            <li><a href="amotec.html" title="L'association des Amis de l'orgue">AMOTEC</a></li>
+                            <li><a href="arbre.html" title="L'association de rénovation des bâtiments">ARBRE</a></li>
+                            <li><a href="eclaireurs.html"
+                                    title="Les Eclaireurs et Eclaireuses Unionistes de France">Éclaireurs</a></li>
+                            <li><a href="eglise_verte.html" title="Église verte">Église verte</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="Lire en ligne Message">Journal
+                            Message</a>
+                        <ul>
+                            <li><a href="./messages/message printemps 2024-98.pdf"
+                                    title="Lire en ligne le dernier Message">Dernier numéro</a></li>
+                            <li><a href="archives_message.html" title="Consulter les archives de Message">Les archives
+                                    du
+                                    Message</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="page_newsletters.html" title="Voir les newsletters">Newsletter</a>
+                    </li>
+                    <li>
+                        <a href="#" title="L'histoire de notre Église">Histoire</a>
+                        <ul>
+                            <li><a href="page_logo.html" title="Explications sur le logo">Le logo</a></li>
+                            <li><a href="reveil_a_crest.html" title="Le Réveil spirituel à Crest">Le Réveil à Crest</a>
+                            </li>
+                            <li><a href="bicentenaire.html" title="Le bicentenaire du temple de Crest">Le
+                                    bicentenaire</a>
+                            </li>
+                            <li><a href="ministres.html" title="Les pasteurs ayant travaillé sur le Crestois">Les
+                                    ministres</a></li>
+                            <li><a href="photos.html" title="Quelques photos">Photos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="faire_un_don.html" title="Faire un don en ligne">Faire un don</a>
+                    </li>
+                    <li><a href="en_direct.html" title="Regarder le culte en direct">En direct&nbsp;<img
+                                src="./assets/images/logo_youtube.webp" alt="Logo Youtube" title="Logo Youtube"
+                                width="20%" /></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+        </a>
+    </header>
+    <main>
+        <h1>Notre association cultuelle</h1>
+        <p class="introduction">
+            L'<b>Église protestante unie du Crestois</b> est une Église chrétienne, protestante, réformée,
+            issue du mouvement de la Réforme du XVI<sup>e</sup> siècle
+            (Luther, Zwingli, Calvin...). Elle est héritière des Églises réformées historiques implantées sur le
+            territoire du Crestois, de Grâne à Espenel,
+            de Plan de Baix à Saillans, d'Eurre à Aouste sur Sye, en passant par Crest et Beaufort sur Gervanne.
+            Sans oublier Divajeu, Piégros-la-Castre, Saint-Sauveur-en-Diois et Montclar-en-Gervanne.
+        </p>
+        <h2>Notre organisation</h2>
+        <h3>Une association cultuelle (Loi 1905)</h3>
+        <p>
+            L'<b>Église protestante unie du Crestois</b> est une Église (on pourrait également parler
+            d'<i>assemblée</i> ou de <i>communauté</i>) "chrétienne" dans la mesure où elle met sa confiance en
+            Dieu,
+            révélé par Jésus de Nazareth, le <i>Christ</i>, mort et ressuscité.
+            Elle a cette conviction profonde que Dieu est Amour. Oui, Dieu aime d'un amour incommensurable l’humanité !
+            A la suite des apôtres et des chrétiens d'hier, et avec les autres Églises chrétiennes d'aujourd'hui, nous
+            croyons et proclamons au monde le Dieu de Jésus Christ.
+        </p>
+        <h3>Le Conseil presbytéral</h3>
+        <h4>Un peu d'histoire</h4>
+        <p>Pour les Églises issues de la Réforme protestante du XVI<sup>e</sup> siècle, l’autorité dans l'Église ne
+            saurait être confiée à une seule personne.
+            Elle est toujours collégiale. Cette instance s’appelle le <i>Conseil presbytéral</i> (CP), une sorte de
+            conseil des "anciens"
+            (signification du terme grec πρεσβύτερος [presbyteros] : ancien, aîné).</p>
+        <p>L’<b>Église protestante unie du Crestois</b> est gérée par un Conseil presbytéral composé de douze
+            membres (pouvant aller jusqu'à quatorze)
+            élus par l’Assemblée générale pour quatre ans. Ce mandat est renouvelable (maximum trois mandats
+            consécutifs).
+            C’est le CP qui coordonne, propose, oriente, mandate et soutient les groupes et les activités de l'Église
+            locale.
+            Il convoque l’Assemblée générale chaque année pour lui rendre compte de sa politique de fonctionnement et
+            des actions menées.</p>
+        <h4>Une équipe pour animer notre Église</h4>
+        <p>Lors de l’Assemblée générale du 3 mars 2024, les personnes suivantes ont été élues au Conseil
+            presbytéral :</p>
+        <ul>
+            <li>Président : Frédéric Reynier ;</li>
+            <li>Vice-présidents : Nicolas Baud et Catherine Zwilling ;</li>
+            <li>Trésoriers : Vincent Chazalette et Christiane Javelas ;</li>
+            <li>Secrétaire : Christiane Férotin et Anne Goy (adjointe) ;</li>
+            <li>Autres membres du CP : Benjamin Dollfus, Sylvie Dubois, Catherine Fallecker,
+                Philippe Giraud, Ottilia Mietzner-Petersen, Claude Pieyre et Geneviève Saussine ;</li>
+            <li>Délégation au Synode régional : Claude Pieyre ;</li>
+            <li>Délégation au Consistoire Portes du Midi : Catherine Zwilling (titulaire) ;</li>
+            <li>Pasteur : Jean-Paul Brunel (membre de droit).</li>
+        </ul>
+        <h4>Territoire desservi</h4>
+        <p>
+            Aujourd'hui, notre Église s'étend sur un territoire qui correspond approximativement à la vallée de la
+            Gervanne
+            et une partie de la vallée de la Drôme.
+        </p>
+        <div class="container_left">
+            <a href="carte_territoire.html" target="_blank"><img src="assets/images/carte_crestois1.jpg"
+                    alt="Carte géographique de l'Église protestante unie du Crestois"
+                    title="Carte géographique de l'Église protestante unie du Crestois" width="200vw"
+                    style="margin-right: 2vw;" /></a>
+        </div>
+        <h4>Les statuts de l'association cultuelle</h4>
+        <p>
+            Sur le plan juridique, conformément à la Loi du 9 décembre 1905, notre Église est une association cultuelle
+            aux statuts déposés en préfecture (10 pages)
+            et en accord avec les statuts de l'<b>Église protestante unie de France</b>.
+            Chaque année, l'association cultuelle tient son Assemblée
+            générale, où elle dresse un bilan de son action, valide ses comptes,
+            vote son budget prévisionnel et détermine ses priorités pour l’avenir.
+        </p>
+        <p>
+            <a href="Statuts AC CREST V3.pdf"><img src="assets/images/status_AC_CREST_V3_mini.jpg"
+                    alt="Statuts de l'association cultuelle" title="Statuts de l'association cultuelle" /></a>
+        </p>
+        <h2>Ensemble du val de Drôme</h2>
+        <p>
+            Notre Église n'est pas seule dans la vallée de la Drôme.
+            Depuis plusieurs décennies, nous avons partageons certains temps et activités
+            avec les <a href="erfdiois.wordpress.com/" title="Églises protestantes unies du Diois"
+                target="_blank">Églises protestantes unies du Diois</a>
+            (Haut-Diois, Die et Bas-Diois).
+            Avec ces deux communautés, notre Église constitue l'<b>ensemble du val de Drôme</b>,
+            qui est un réseau cohérent à beaucoup d'égards (géographie, histoire, sociologie, théologie, etc.).
+        </p>
+        <p>
+            Ce fonctionnement en ensemble permet de vivre des temps de solidarité et d'entraide
+            (ex : lorsqu'il manque un prédicateur pour un culte ou pour un enterrement) mais aussi
+            de mutualisation des moyens (ex : animation d'études bibliques, d'un groupe de jeunes).
+            Il est également l'occasion de rencontres communautaires.
+            C'est le cas chaque jeudi de l'Ascension avec un culte au temple d'Espenel,
+            suivi d'un repas dans la salle des fêtes, un moment de communion fort apprécié.
+        </p>
+        <h2>Consistoire des Portes du Midi</h2>
+        <p>
+            Notre Église s'insère dans un ensemble plus vaste encore, appelé <b>Consistoire des Portes du
+                Midi</b>, regroupant
+            une quinzaine d'Églises locales, toutes situées dans le sud de l'Ardèche et de la Drôme :
+        </p>
+        <ul>
+            <li><a href="https://ardechemeridionale.epudf.org" target="_blank">Aubenas Vals, Pont d’Arc</a> ;
+            </li>
+            <li><a href="https://baronnies.epudf.org" target="_blank">Les Baronnies</a> ;
+            </li>
+            <li><a href="https://epuet.epudf.org" target="_blank">Enclave et Tricastin</a> ;
+            </li>
+            <li><a href="https://montelimarleteil.epudf.org" target="_blank">Montélimar Le Teil</a> ;
+            </li>
+            <li><a href="https://roubion-jabron.epudf.org" target="_blank">Entre Roubion et Jabron</a> ;
+            </li>
+            <li><a href="https://ouveze-payre.epudf.org" target="_blank">Vallées d’Ouvèze- Payre</a> ;
+            </li>
+            <li><a href="https://privas-flaviac.epudf.org" target="_blank">Privas Flaviac</a> ;
+            </li>
+            <li><a href="https://livron-loriol.epudf.org" target="_blank">Livron et Loriol</a> ;
+            </li>
+            <li><a href="https://bas-eyrieux.epudf.org" target="_blank">Bas Eyrieux / La Voulte – Beauchastel –
+                    Charmes</a> ;
+            </li>
+            <li><a href="https://epu-crestois.fr" target="_blank">Le Crestois</a> ;
+            </li>
+            <li><a href="https://erfdiois.wordpress.com" target="_blank">Die et Bas-Diois, Haut-Diois</a> ;
+            </li>
+        </ul>
+        <p>
+            C’est là un niveau de vie d’Église particulièrement important pour la mutualisation,
+            et la formation des membres engagés de notre communauté (prédicateurs laïcs, liturges, visiteurs, etc.).
+        </p>
+        <p>
+            Une rencontre annuelle à l'automne permet de nouer des liens fraternels et de solidarité entre Églises
+            voisines.
+            Cette année, ce sera le <b>dimanche 1<sup>er</sup> octobre 2023 à La Bégude-de-Mazenc</b>
+            autour du thème "Joie et souffle".
+        </p>
+        <h2>La région Centre-Alpes-Rhône</h2>
+        <p>
+            Si on élargit encore le périmètre, notre Église fait partie de la <b>région Centre-Alpes-Rhône</b>
+            de l'<a href="https://epudf.org/" title="Église protestante unie de France" target="_blank">Église
+                protestante unie
+                de France</a> (EPUdF).
+            Cliquez pour consulter la carte de la région CAR.
+        </p>
+        <div class="container_left">
+            <a href="./assets/images/region_centre_alpes_rhone.jpg" target="_blank"><img
+                    src="./assets/images/region_centre_alpes_rhone_mini.jpg" alt="Carte de la Région Centre-Alpes-Rhône"
+                    title="Carte de la Région Centre-Alpes-Rhône" width="200vw" style="margin-right: 2vw;" /></a>
+        </div>
+        <p>
+            Le niveau régional est un des lieux d’autorité avec son synode régional.
+            Pour mémoire, nous vivons l’Église sous un régime « presbytéro-synodal »,
+            les lieux d’autorité et de décisions étant les synodes régional et national pour l’Union,
+            et le Conseil Presbytéral pour le niveau local.
+        </p>
+    </main>
+    <footer>
+        <p>
+            <a href="mentions_légales.html">Mentions légales</a> | © EPU Crestois | Tous droits
+            réservés |
+            <a href="https://meteofrance.com/previsions-meteo-france/crest/26400" target="_blank"
+                onclick="ouvre(this.href);; return false;">
+                <i class="fas fa-cloud"></i></a>
+            Météo | Conception : NB-BD
+        </p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

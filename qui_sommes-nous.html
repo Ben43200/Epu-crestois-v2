@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta name="description" content="Venez découvrir l'Église protestante unie du Crestois" />
+
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Église protestante unie du Crestois</title>
+    <link href="assets/images/favicon.ico" rel="shortcut icon" />
+
+    <script src="https://kit.fontawesome.com/a528402c70.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body onload="fetchAsync()">
+    <header>
+        <div class="emplacement_logo">
+            <a href="page_logo.html"><img src="./assets/images/mini_logo_epu-crestois_2022.jpg"
+                    alt="Logo de l'Église protestante unie du Crestois"
+                    title="Logo de l'Église protestante unie du Crestois" class="mini_logo" /></a>
+        </div>
+        <div class="citation" id="quote"></div>
+        <a class="lien-adresse" href="https://goo.gl/maps/HfojvAwyPoK11SiZ7" target="_blank">
+            <div class="adresse">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3 class="adresse-temple">1 Place du Temple,</br>26 400 Crest, France</h3>
+            </div>
+        </a>
+        <nav>
+            <div id="mySidenav" class="sidenav">
+                <a id="closeBtn" name="close-burger" href="#hidden" class="close">×</a>
+                <ul class="menu">
+                    <li><a href="index.html" title="Retour à la page d'accueil">Accueil</a>
+                        <ul>
+                            <li><a href="qui_sommes-nous.html" title="Qui sommes-nous ?">Qui sommes-nous ?</a></li>
+                            <li><a href="ou_nous-trouver.html" title="Où nous trouver ?">Où nous trouver ?</a></li>
+                            <li><a href="notre_association.html" title="Notre association cultuelle">Notre
+                                    association</a></li>
+                            <li><a href="devenir_membre.html" title="Comment devenir membre ?">Devenir membre</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="En relation à Dieu">En relation à Dieu</a>
+                        <ul>
+                            <li><a href="culte.html" title="Le culte">Culte</a></li>
+                            <li><a href="bapteme.html" title="Le baptême">Baptême</a></li>
+                            <li><a href="cene.html" title="La sainte Cène">Cène</a></li>
+                            <li><a href="mariage.html" title="La bénédiction de mariage">Mariage</a></li>
+                            <li><a href="service_funebre.html" title="Le service funèbre">Service funèbre</a></li>
+                            <li><a href="predications.html" title="Prédications">Prédications</a></li>
+                            <li><a href="confession_de_foi.html" title="Des confessions de foi">Confessions de foi</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="Vie de l'Église">Vie de l'Église</a>
+                        <ul>
+                            <li><a href="ecole_biblique.html" title="Le Club biblique">Le Club biblique</a></li>
+                            <li><a href="kt-cine.html" title="Le KT-ciné">KT-ciné</a></li>
+                            <li><a href="partage_biblique.html" title="Le partage biblique oecuménique">Partage
+                                    biblique</a></li>
+                            <li><a href="foyers_mixtes.html" title="Les foyers mixtes">Foyers mixtes</a></li>
+                            <li><a href="reunion_priere.html" title="Réunion de prière">Réunion de prière</a></li>
+                            <li><a href="halte_spirituelle.html" title="Haltes spirituelles">Haltes spirituelles</a>
+                            </li>
+                            <li><a href="sacre_petit_choeur.html" title="Le Sacré Petit Chœur">Sacré Petit Chœur</a>
+                            </li>
+                            <li><a href="sacre_petit_orchestre.html" title="Le Sacré Petit Orchestre">Sacré Petit
+                                    Orchestre</a></li>
+                            <li><a href="aumonerie_hopital.html" title="L'aumônerie hospitalière">Aumônerie
+                                    hospitalière</a>
+                            </li>
+                            <li><a href="visite.html" title="Le groupe des visites">Visites</a></li>
+                            <li><a href="atelier_creatif.html" title="Atelier créatif">Atelier créatif</a></li>
+                            <li><a href="fetes.html" title="Les fêtes">Fêtes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="Les associations partenaires">Nos partenaires</a>
+                        <ul>
+                            <li><a href="entraide.html" title="L'Entraide Fraternelle Protestante">Entraide</a></li>
+                            <li><a href="amotec.html" title="L'association des Amis de l'orgue">AMOTEC</a></li>
+                            <li><a href="arbre.html" title="L'association de rénovation des bâtiments">ARBRE</a></li>
+                            <li><a href="eclaireurs.html"
+                                    title="Les Eclaireurs et Eclaireuses Unionistes de France">Éclaireurs</a></li>
+                            <li><a href="eglise_verte.html" title="Église verte">Église verte</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="Lire en ligne Message">Journal
+                            Message</a>
+                        <ul>
+                            <li><a href="./messages/message printemps 2024-98.pdf"
+                                    title="Lire en ligne le dernier Message">Dernier numéro</a></li>
+                            <li><a href="archives_message.html" title="Consulter les archives de Message">Les archives
+                                    du
+                                    Message</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="page_newsletters.html" title="Voir les newsletters">Newsletter</a>
+                    </li>
+                    <li>
+                        <a href="#" title="L'histoire de notre Église">Histoire</a>
+                        <ul>
+                            <li><a href="page_logo.html" title="Explications sur le logo">Le logo</a></li>
+                            <li><a href="reveil_a_crest.html" title="Le Réveil spirituel à Crest">Le Réveil à Crest</a>
+                            </li>
+                            <li><a href="bicentenaire.html" title="Le bicentenaire du temple de Crest">Le
+                                    bicentenaire</a>
+                            </li>
+                            <li><a href="ministres.html" title="Les pasteurs ayant travaillé sur le Crestois">Les
+                                    ministres</a></li>
+                            <li><a href="photos.html" title="Quelques photos">Photos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="faire_un_don.html" title="Faire un don en ligne">Faire un don</a>
+                    </li>
+                    <li><a href="en_direct.html" title="Regarder le culte en direct">En direct&nbsp;<img
+                                src="./assets/images/logo_youtube.webp" alt="Logo Youtube" title="Logo Youtube"
+                                width="20%" /></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+        </a>
+    </header>
+	<main>
+		<h1>Présentation</h1>
+		<p class="introduction">
+			L'<b>Église protestante unie du Crestois</b> est une Église chrétienne, protestante, réformée,
+			issue du mouvement de la Réforme du XVI<sup>e</sup> siècle
+			(Luther, Zwingli, Calvin...). Elle est héritière des Églises réformées historiques implantées sur le
+			territoire du Crestois, de Grâne à Espenel,
+			de Plan de Baix à Saillans, d'Eurre à Aouste sur Sye, en passant par Mirabel et Blacons et Beaufort sur
+			Gervanne, et bien sûr Crest. Elle est constituée d'environ 400 foyers.
+		</p>
+		<h2>Qui sommes-nous ?</h2>
+		<h3>Une Église chrétienne…</h3>
+		<p>
+			L'<b>Église protestante unie du Crestois</b> est une Église (ou <i>assemblée</i> ou
+			<i>communauté</i>) "chrétienne" dans la mesure où elle met sa confiance en Dieu,
+			révélé par Jésus de Nazareth, le <i>Christ</i>, mort et ressuscité.
+			Elle a cette conviction profonde que Dieu est Amour. Oui, Dieu aime d'un amour incommensurable l’humanité !
+			A la suite des apôtres et des chrétiens d'hier, et avec les autres Églises chrétiennes d'aujourd'hui, nous
+			croyons et proclamons au monde le Dieu de Jésus Christ.
+		</p>
+		<img src="./assets/images/assemblee_bicentenaire.jpg" alt="Assemblée du bicentenaire au temple de Crest"
+			title="Assemblée du bicentenaire au temple de Crest" width="100%"/>
+		<h3>Protestante…</h3>
+		<p>
+			L'<b>Église protestante unie du Crestois</b> est une Église "protestante" dans le sens qu'elle
+			trouve ses racines dans la Réforme du XVI<sup>e</sup> siècle en Europe.
+			Elle est particulièrement héritière du <i>protestantisme</i> historique en France dont les mots d'ordre
+			étaient alors : <i>sola fide</i> (la foi seule),
+			<i>sola scriptura</i> (l’Écriture seule), <i>sola gratia</i> (la grâce seule), <i>solus Christus</i>
+			(Christ seulement) et <i>soli Deo gloria</i> (à Dieu seul la gloire).
+			Sur la lancée de la Réforme, notre Église annonce, proclame et témoigne (en latin : <i>protestare</i> =
+			"attester devant") de cette Bonne Nouvelle :
+			Dieu aime et accueille chaque être humain tel qu’il est, sans aucun mérite de sa part.
+		</p>
+		<h3>Réformée…</h3>
+		<p>
+			L'<b>Église protestante unie du Crestois</b> est une Église "réformée"
+			car héritière de la tradition calviniste (Jean Calvin), en pleine communion avec la tradition luthérienne
+			(Martin Luther).
+			Elle croit en cet Evangile de grâce, annoncé au cœur de la Bible et manifesté par l’Esprit de Dieu.
+			C'est pourquoi notre Église reste à l’écoute des textes bibliques et de leur interprétation,
+			et se laisse conduire et déplacer par eux au quotidien. Dit autrement, elle se laisse réformer, suivant en
+			cela l'adage du XVII<sup>e</sup> siècle : l'Église est toujours à réformer
+			(en latin : <i>Ecclesia semper reformanda est</i>).
+		</p>
+		<h2>Église protestante unie du Crestois</h2>
+		<p>
+			Depuis 2013, notre Église a pris le nom d'<b>Église protestante unie du Crestois</b>.
+			Elle fait partie de l’Union des <a href="https://epudf.org/" title="Églises protestantes unies de France"
+				target="_blank">Églises protestantes unies de France - communion luthérienne et réformée</a> (EPUdF),
+			union des Églises évangéliques luthériennes de France et réformée de France, membre de la <a
+				href="https://www.protestants.org/page/635449-accueil" title="Fédération Protestante de France"
+				target="_blank">Fédération Protestante de France</a> (FPF).
+		</p>
+	</main>
+    <footer>
+        <p>
+            <a href="mentions_légales.html">Mentions légales</a> | © EPU Crestois | Tous droits
+            réservés |
+            <a href="https://meteofrance.com/previsions-meteo-france/crest/26400" target="_blank"
+                onclick="ouvre(this.href);; return false;">
+                <i class="fas fa-cloud"></i></a>
+            Météo | Conception : NB-BD
+        </p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

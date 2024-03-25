@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta name="description" content="Venez découvrir l'Église protestante unie du Crestois" />
+
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Église protestante unie du Crestois</title>
+    <link href="assets/images/favicon.ico" rel="shortcut icon" />
+
+    <script src="https://kit.fontawesome.com/a528402c70.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body onload="fetchAsync()">
+    <header>
+        <div class="emplacement_logo">
+            <a href="page_logo.html"><img src="./assets/images/mini_logo_epu-crestois_2022.jpg"
+                    alt="Logo de l'Église protestante unie du Crestois"
+                    title="Logo de l'Église protestante unie du Crestois" class="mini_logo" /></a>
+        </div>
+        <div class="citation" id="quote"></div>
+        <a class="lien-adresse" href="https://goo.gl/maps/HfojvAwyPoK11SiZ7" target="_blank">
+            <div class="adresse">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3 class="adresse-temple">1 Place du Temple,</br>26 400 Crest, France</h3>
+            </div>
+        </a>
+        <nav>
+            <div id="mySidenav" class="sidenav">
+                <a id="closeBtn" name="close-burger" href="#hidden" class="close">×</a>
+                <ul class="menu">
+                    <li><a href="index.html" title="Retour à la page d'accueil">Accueil</a>
+                        <ul>
+                            <li><a href="qui_sommes-nous.html" title="Qui sommes-nous ?">Qui sommes-nous ?</a></li>
+                            <li><a href="ou_nous-trouver.html" title="Où nous trouver ?">Où nous trouver ?</a></li>
+                            <li><a href="notre_association.html" title="Notre association cultuelle">Notre
+                                    association</a></li>
+                            <li><a href="devenir_membre.html" title="Comment devenir membre ?">Devenir membre</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="En relation à Dieu">En relation à Dieu</a>
+                        <ul>
+                            <li><a href="culte.html" title="Le culte">Culte</a></li>
+                            <li><a href="bapteme.html" title="Le baptême">Baptême</a></li>
+                            <li><a href="cene.html" title="La sainte Cène">Cène</a></li>
+                            <li><a href="mariage.html" title="La bénédiction de mariage">Mariage</a></li>
+                            <li><a href="service_funebre.html" title="Le service funèbre">Service funèbre</a></li>
+                            <li><a href="predications.html" title="Prédications">Prédications</a></li>
+                            <li><a href="confession_de_foi.html" title="Des confessions de foi">Confessions de foi</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="Vie de l'Église">Vie de l'Église</a>
+                        <ul>
+                            <li><a href="ecole_biblique.html" title="Le Club biblique">Le Club biblique</a></li>
+                            <li><a href="kt-cine.html" title="Le KT-ciné">KT-ciné</a></li>
+                            <li><a href="partage_biblique.html" title="Le partage biblique oecuménique">Partage
+                                    biblique</a></li>
+                            <li><a href="foyers_mixtes.html" title="Les foyers mixtes">Foyers mixtes</a></li>
+                            <li><a href="reunion_priere.html" title="Réunion de prière">Réunion de prière</a></li>
+                            <li><a href="halte_spirituelle.html" title="Haltes spirituelles">Haltes spirituelles</a>
+                            </li>
+                            <li><a href="sacre_petit_choeur.html" title="Le Sacré Petit Chœur">Sacré Petit Chœur</a>
+                            </li>
+                            <li><a href="sacre_petit_orchestre.html" title="Le Sacré Petit Orchestre">Sacré Petit
+                                    Orchestre</a></li>
+                            <li><a href="aumonerie_hopital.html" title="L'aumônerie hospitalière">Aumônerie
+                                    hospitalière</a>
+                            </li>
+                            <li><a href="visite.html" title="Le groupe des visites">Visites</a></li>
+                            <li><a href="atelier_creatif.html" title="Atelier créatif">Atelier créatif</a></li>
+                            <li><a href="fetes.html" title="Les fêtes">Fêtes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="Les associations partenaires">Nos partenaires</a>
+                        <ul>
+                            <li><a href="entraide.html" title="L'Entraide Fraternelle Protestante">Entraide</a></li>
+                            <li><a href="amotec.html" title="L'association des Amis de l'orgue">AMOTEC</a></li>
+                            <li><a href="arbre.html" title="L'association de rénovation des bâtiments">ARBRE</a></li>
+                            <li><a href="eclaireurs.html"
+                                    title="Les Eclaireurs et Eclaireuses Unionistes de France">Éclaireurs</a></li>
+                            <li><a href="eglise_verte.html" title="Église verte">Église verte</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="Lire en ligne Message">Journal
+                            Message</a>
+                        <ul>
+                            <li><a href="./messages/message printemps 2024-98.pdf"
+                                    title="Lire en ligne le dernier Message">Dernier numéro</a></li>
+                            <li><a href="archives_message.html" title="Consulter les archives de Message">Les archives
+                                    du
+                                    Message</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="page_newsletters.html" title="Voir les newsletters">Newsletter</a>
+                    </li>
+                    <li>
+                        <a href="#" title="L'histoire de notre Église">Histoire</a>
+                        <ul>
+                            <li><a href="page_logo.html" title="Explications sur le logo">Le logo</a></li>
+                            <li><a href="reveil_a_crest.html" title="Le Réveil spirituel à Crest">Le Réveil à Crest</a>
+                            </li>
+                            <li><a href="bicentenaire.html" title="Le bicentenaire du temple de Crest">Le
+                                    bicentenaire</a>
+                            </li>
+                            <li><a href="ministres.html" title="Les pasteurs ayant travaillé sur le Crestois">Les
+                                    ministres</a></li>
+                            <li><a href="photos.html" title="Quelques photos">Photos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="faire_un_don.html" title="Faire un don en ligne">Faire un don</a>
+                    </li>
+                    <li><a href="en_direct.html" title="Regarder le culte en direct">En direct&nbsp;<img
+                                src="./assets/images/logo_youtube.webp" alt="Logo Youtube" title="Logo Youtube"
+                                width="20%" /></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+        </a>
+    </header>
+	<main>
+		<h1>Le baptême</h1>
+		<p class="introduction">
+			Il n'y a pas un baptême protestant, un baptême catholique, un baptême orthodoxe, etc. Il n'y a qu'un seul
+			baptême et il est chrétien !
+			Il n'y a qu'un seul et même baptême qui est valide dans toutes les Églises et qui ne peut être administré
+			qu'une seule fois au cours de la vie.
+			Institué par le Christ, le baptême est un des deux sacrements des protestants (avec la sainte Cène).
+		</p>
+		<p>
+			<button class="favorite styled_button" type="button">
+				<a href="./assets/images/coordonnees.jpg#page=1&zoom=80" alt="Bouton Nos coordonnées"
+					title="Pour voir nos coordonnées" target="_blank">
+					Nos coordonnées
+				</a>
+			</button>
+		</p>
+		<h2>Etymologie</h2>
+		<p>
+			Le substantif <i>baptême</i> vient du terme grec βάπτισμα [baptisma], dérivé de verbe βαπτίζειν
+			[baptizein] dont la signification est « plonger dans un liquide, immerger ». On n'est pas loin de la noyade
+			!
+			Cette immersion dans l'eau rappelle les rites de purification de l'Ancien Testament. Symboliquement, le
+			baptême marque la mort de l'individu avant sa renaissance (c'est-à-dire sa résurrection).
+		</p>
+		<h2>Un peu d'histoire</h2>
+		<h3>Le baptême avant le baptême</h3>
+		<div class="container_left">
+			<img src="./assets/images/saint_jean_baptisant_le_peuple_nicolas_poussin_1635.jpg"
+				alt="Saint Jean baptisant le peuple, de Nicolas Poussin (1635)"
+				title="Saint Jean baptisant le peuple, de Nicolas Poussin (1635)" width="200vw"
+				style="margin-right: 2vw;" />
+			<p>
+				Dans l'Antiquité, vers l'an 30 de notre ère, le cousin de Jésus de Nazareth, Jean le Baptiste (ou le
+				Baptiseur), un prédicateur local, administre le baptême sur les bords du Jourdain en Israël. A qui ?
+				Aux foules qui le suivent et se repentent de leurs péchés. Jean prêche <i>le baptême de repentance,
+					pour la rémission des péchés</i>. (Lc 3,3) Par ce geste symbolique, ces personnes se convertissent
+				et marquent leur changement de vie.
+			</p>
+		</div>
+		<p>
+			Mais bientôt les foules voient en Jean le Baptiste le <i>Messie</i> attendu par le peuple d'Israël. Erreur
+			! Dès lors, toujours selon Lc 3, il annonce la venue prochaine de <i>quelqu'un de bien plus grand que
+				lui</i> qui baptisera non plus dans l'eau,
+			mais dans l'Esprit. (v. 15-16)
+		</p>
+		<h3>Le baptême de Jésus</h3>
+		<p>
+			Rapporté par les quatres Evangiles, c'est l'Evangile de Mt qui raconte le baptême de Jésus avec le plus de
+			détails :
+		</p>
+		<div class="container_left">
+			<img src="./assets/images/le_baptême_du_christ_atelier_de_jan_van_scorel_1527_detail.jpg"
+				alt="Le Baptême du Christ (détail), atelier de Jan van Scorel (1527)"
+				title="Le Baptême du Christ (détail), atelier de Jan van Scorel (1527)" width="200vw"
+				style="margin-right: 2vw;" />
+			<blockquote>
+				Alors Jésus vint de la Galilée au Jourdain vers Jean, pour être baptisé par lui.
+				Mais Jean s'y opposait en disant : C'est moi qui ai besoin d'être baptisé par toi et c'est toi qui viens
+				à moi !
+				Jésus lui répondit : Laisse faire maintenant, car il est convenable que nous accomplissions ainsi toute
+				justice.
+				Alors Jean le laissa faire. Aussitôt baptisé, Jésus sortit de l'eau. Et voici : les cieux s'ouvrirent,
+				il vit l'Esprit de Dieu descendre comme une colombe et venir sur lui.
+				Et voici qu'une voix fit entendre des cieux ces paroles : Celui-ci est mon Fils bien-aimé, en qui j'ai
+				mis toute mon affection. (Mt 3,13-17)
+			</blockquote>
+		</div>
+		<h3>Le baptême chrétien</h3>
+		<p>
+			Durant le ministère de Jésus, cette pratique baptismale, consistant à plonger dans l'eau courante du
+			Jourdain celui qui désire se convertir, continue à être utilisée.
+			L'Evangile de Jn affirme que Jésus baptisait, tout en précisant qu'il leur fait faire le travail :
+		<blockquote>
+			Après cela, Jésus se rendit avec ses disciples dans la terre de Judée ; et là, il séjournait avec eux et
+			baptisait.
+			Jean aussi baptisait à Énon, près de Salim, parce qu'il y avait beaucoup de points d'eau ; on s'y rendait
+			pour être baptisé. (Jn 3,22-24)
+		</blockquote>
+		<blockquote>
+			Le Seigneur sut que les Pharisiens avaient appris qu'il faisait et baptisait plus de disciples que Jean.
+			Toutefois, Jésus ne baptisait pas lui-même, mais c'était ses disciples. (Jn 4,1-2)
+		</blockquote>
+		</p>
+		<p>
+			Au terme de son ministère, Jésus le Christ, mort et ressuscité, adresse ces mots à ses disciples :
+		<blockquote>
+			Tout pouvoir m'a été donné dans le ciel et sur la terre.
+			Allez, faites de toutes les nations des disciples, les baptisant au nom du Père, du Fils et du Saint-Esprit,
+			et enseignez-leur à observer tout ce que je vous ai prescrit. Et voici, je suis avec vous tous les jours,
+			jusqu'à la fin du monde. (Mt 28,18-20)
+		</blockquote>
+		</p>
+		<p>
+			Dès lors, de l'Antiquité à aujourd'hui, les Églises chrétiennes vont baptiser les foules.
+		</p>
+		<div class="container_left">
+			<img src="./assets/images/bapteme_clandestin_jeanne_lombard_1925_collections_du_musee_du_désert.jpg"
+				alt="Baptême clandestin, de Jeanne Lombard (1925) Collections du Musée du Désert"
+				title="Le Baptême du Christ (détail), atelier de Jan van Scorel (1527)" width="200vw"
+				style="margin-right: 2vw;" />
+			<p>
+				Avec la Réforme du XVI<sup>e</sup> siècle, les protestants s'attacheront à remettre du sens pour aller
+				au-delà du rituel d'intégration à la communauté.
+				Plus tard, pendant les temps de persécution (1685-1765 : temples détruits, cultes interdits, conversions
+				forcées, exils, galères...), les protestants continueront à respecter le commandement du Christ,
+				comme veut le montrer la peinture de Jeanne Lombard, en prenant parfois d'énormes risques pour
+				baptiser...
+			</p>
+		</div>
+		<h2>Le déroulement du baptême aujourd'hui</h2>
+		<p>
+			Il existe plusieurs façons d'administrer le baptême : par aspersion (le baptisé est arrosé légèrement
+			par la projection de quelques gouttes d'eau),
+			par effusion (l'eau est versée sur le front du baptisé) ou par immersion (le baptisé est totalement plongé
+			dans l'eau). De même, le lieu, le moment de la cérémonie, les circonstances, l'âge du baptisé
+			sont autant de paramètres qui peuvent influer sur le déroulement du baptême. Que ce soit dans un temple,
+			dans la nature ou ailleurs, que ce soit durant le culte communautaire ou à autre moment,
+			qu'il s'agisse d'un jeune enfant, d'un adolescent ou d'un adulte, l'officiant s'adaptera.
+			Le baptême n'est possible qu'après quelques rencontres, en tout cas un parcours de préparation, avec un
+			pasteur ou un catéchète ou un accompagnateur lui-même baptisé.
+		</p>
+		<p>
+			Ici, à titre indicatif, nous présentons un déroulement de baptême par aspersion au cours d'un culte
+			dominical. En voici les étapes principales :
+		</p>
+		<div id="boite">
+			<ol>
+				<li><b>Institution du baptême</b> : Accueil du futur baptisé et de sa famille, suivi du rappel
+					de la volonté de Jésus Christ.</li>
+				<li><b>Instruction</b> : Un peu de pédagogie ! La grâce de Dieu est première, c'est-à-dire que
+					Dieu aime chacun comme son enfant et le reçoit tel qu'il est.
+					Le signe du baptême vient dire cet accueil inconditionnel de Dieu. Symboliquement, l'eau dit au
+					baptisé
+					(litt. "l'immergé", "le noyé") est plongé dans l'eau et qu'il en ressort tel un être nouveau.</li>
+				<li><b>Baptême</b> : Généralement fait par aspersion dans notre Église, le baptême n'est pas un
+					acte magique. Lorsque l'officiant dépose quelques gouttes d'eau sur le front du baptisé,
+					il lui signifie que Dieu l'a aimé avant même qu'il ne le sache.</li>
+				<li><b>Engagements</b> : S'il s'agit d'un jeune enfant, les parents, parrain et marraine
+					s'engagent à témoigner de l'amour de Dieu jusqu'à ce que le baptisé puisse à son tour
+					confesser personnellement que "Jésus Christ est le Seigneur". Si le baptisé est adolescent ou
+					adulte, il
+					peut lui-même confesser sa foi devant l'assemblée. Elle fera sens comme réponse de foi à l'amour de
+					Dieu.</li>
+				<li><b>Prière d'action de grâces</b> : Ce temps est l'occasion de dire merci à Dieu et d'être
+					reconnaissant pour cette joie partagée en Église.</li>
+				<li><b>Exhortations</b> : Le baptisé, sa famille (parents, parrain, marraine) et la communauté
+					reçoivent quelques mots d'encouragement.
+					Le baptême est un départ dans la vie spirituelle, pas une arrivée...</li>
+				<li><b>Remise de la Bible</b> : Le baptisé reçoit une Bible pour l'aider à cheminer et y
+					trouver une parole qui fait vivre.</li>
+			</ol>
+		</div>
+		<!-- <p>
+		</p>
+		<div id="bdp"> Suppression BD-->
+	</main>
+    <footer>
+        <p>
+            <a href="mentions_légales.html">Mentions légales</a> | © EPU Crestois | Tous droits
+            réservés |
+            <a href="https://meteofrance.com/previsions-meteo-france/crest/26400" target="_blank"
+                onclick="ouvre(this.href);; return false;">
+                <i class="fas fa-cloud"></i></a>
+            Météo | Conception : NB-BD
+        </p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

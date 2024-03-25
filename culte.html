@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta name="description" content="Venez découvrir l'Église protestante unie du Crestois" />
+
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Église protestante unie du Crestois</title>
+    <link href="assets/images/favicon.ico" rel="shortcut icon" />
+
+    <script src="https://kit.fontawesome.com/a528402c70.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body onload="fetchAsync()">
+    <header>
+        <div class="emplacement_logo">
+            <a href="page_logo.html"><img src="./assets/images/mini_logo_epu-crestois_2022.jpg"
+                    alt="Logo de l'Église protestante unie du Crestois"
+                    title="Logo de l'Église protestante unie du Crestois" class="mini_logo" /></a>
+        </div>
+        <div class="citation" id="quote"></div>
+        <a class="lien-adresse" href="https://goo.gl/maps/HfojvAwyPoK11SiZ7" target="_blank">
+            <div class="adresse">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3 class="adresse-temple">1 Place du Temple,</br>26 400 Crest, France</h3>
+            </div>
+        </a>
+        <nav>
+            <div id="mySidenav" class="sidenav">
+                <a id="closeBtn" name="close-burger" href="#hidden" class="close">×</a>
+                <ul class="menu">
+                    <li><a href="index.html" title="Retour à la page d'accueil">Accueil</a>
+                        <ul>
+                            <li><a href="qui_sommes-nous.html" title="Qui sommes-nous ?">Qui sommes-nous ?</a></li>
+                            <li><a href="ou_nous-trouver.html" title="Où nous trouver ?">Où nous trouver ?</a></li>
+                            <li><a href="notre_association.html" title="Notre association cultuelle">Notre
+                                    association</a></li>
+                            <li><a href="devenir_membre.html" title="Comment devenir membre ?">Devenir membre</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="En relation à Dieu">En relation à Dieu</a>
+                        <ul>
+                            <li><a href="culte.html" title="Le culte">Culte</a></li>
+                            <li><a href="bapteme.html" title="Le baptême">Baptême</a></li>
+                            <li><a href="cene.html" title="La sainte Cène">Cène</a></li>
+                            <li><a href="mariage.html" title="La bénédiction de mariage">Mariage</a></li>
+                            <li><a href="service_funebre.html" title="Le service funèbre">Service funèbre</a></li>
+                            <li><a href="predications.html" title="Prédications">Prédications</a></li>
+                            <li><a href="confession_de_foi.html" title="Des confessions de foi">Confessions de foi</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="Vie de l'Église">Vie de l'Église</a>
+                        <ul>
+                            <li><a href="ecole_biblique.html" title="Le Club biblique">Le Club biblique</a></li>
+                            <li><a href="kt-cine.html" title="Le KT-ciné">KT-ciné</a></li>
+                            <li><a href="partage_biblique.html" title="Le partage biblique oecuménique">Partage
+                                    biblique</a></li>
+                            <li><a href="foyers_mixtes.html" title="Les foyers mixtes">Foyers mixtes</a></li>
+                            <li><a href="reunion_priere.html" title="Réunion de prière">Réunion de prière</a></li>
+                            <li><a href="halte_spirituelle.html" title="Haltes spirituelles">Haltes spirituelles</a>
+                            </li>
+                            <li><a href="sacre_petit_choeur.html" title="Le Sacré Petit Chœur">Sacré Petit Chœur</a>
+                            </li>
+                            <li><a href="sacre_petit_orchestre.html" title="Le Sacré Petit Orchestre">Sacré Petit
+                                    Orchestre</a></li>
+                            <li><a href="aumonerie_hopital.html" title="L'aumônerie hospitalière">Aumônerie
+                                    hospitalière</a>
+                            </li>
+                            <li><a href="visite.html" title="Le groupe des visites">Visites</a></li>
+                            <li><a href="atelier_creatif.html" title="Atelier créatif">Atelier créatif</a></li>
+                            <li><a href="fetes.html" title="Les fêtes">Fêtes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="Les associations partenaires">Nos partenaires</a>
+                        <ul>
+                            <li><a href="entraide.html" title="L'Entraide Fraternelle Protestante">Entraide</a></li>
+                            <li><a href="amotec.html" title="L'association des Amis de l'orgue">AMOTEC</a></li>
+                            <li><a href="arbre.html" title="L'association de rénovation des bâtiments">ARBRE</a></li>
+                            <li><a href="eclaireurs.html"
+                                    title="Les Eclaireurs et Eclaireuses Unionistes de France">Éclaireurs</a></li>
+                            <li><a href="eglise_verte.html" title="Église verte">Église verte</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="Lire en ligne Message">Journal
+                            Message</a>
+                        <ul>
+                            <li><a href="./messages/message printemps 2024-98.pdf"
+                                    title="Lire en ligne le dernier Message">Dernier numéro</a></li>
+                            <li><a href="archives_message.html" title="Consulter les archives de Message">Les archives
+                                    du
+                                    Message</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="page_newsletters.html" title="Voir les newsletters">Newsletter</a>
+                    </li>
+                    <li>
+                        <a href="#" title="L'histoire de notre Église">Histoire</a>
+                        <ul>
+                            <li><a href="page_logo.html" title="Explications sur le logo">Le logo</a></li>
+                            <li><a href="reveil_a_crest.html" title="Le Réveil spirituel à Crest">Le Réveil à Crest</a>
+                            </li>
+                            <li><a href="bicentenaire.html" title="Le bicentenaire du temple de Crest">Le
+                                    bicentenaire</a>
+                            </li>
+                            <li><a href="ministres.html" title="Les pasteurs ayant travaillé sur le Crestois">Les
+                                    ministres</a></li>
+                            <li><a href="photos.html" title="Quelques photos">Photos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="faire_un_don.html" title="Faire un don en ligne">Faire un don</a>
+                    </li>
+                    <li><a href="en_direct.html" title="Regarder le culte en direct">En direct&nbsp;<img
+                                src="./assets/images/logo_youtube.webp" alt="Logo Youtube" title="Logo Youtube"
+                                width="20%" /></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+        </a>
+    </header>
+	<main>
+		<h1>Le culte : tous les dimanches à 10 h 30</h1>
+		<p class="introduction">
+			Tous les dimanches et certains jours de fête (Noël, Pâques, Ascension, Pentecôte), notre communauté se
+			réunit pour le culte.
+			Ce temps (une heure environ) nous permet de nous tourner en toute confiance vers le Dieu de Jésus Christ
+			pour le célébrer, le louer et le remercier.
+			C'est aussi, pour chacun, un moment à part dans sa semaine pour se poser devant celui qui est le Tout Autre,
+			pour se reposer avec ses frères et s&#339;urs en Christ,
+			et pour prier ensemble, chanter ensemble, méditer la Bible ensemble, communier ensemble... Le culte s'avère
+			donc être à la fois un temps de développement spirituel
+			et de ressourcement personnel et communautaire.
+		</p>
+        <p>
+            <button class="favorite styled_button" type="button">
+                <a href="https://www.youtube.com/@epu-crestois" alt="Bouton Youtube"
+                    title="Regarder le culte en direct sur Youtube" target="_blank">
+                    Le direct
+                </a>
+            </button>
+        </p>
+		<h2>Le temple, un lieu ouvert à tous</h2>
+		<p>
+			Nous vivons généralement le culte dominical dans l'un de nos deux principaux temples : Crest et
+			Beaufort-sur-Gervanne. Mais pas exclusivement !
+			Il nous arrive de vivre le culte dans les temples de Grâne, de Plan-de-Baix ou d'Espenel, mais aussi en
+			extérieur
+			comme à Clos-Rond (Gigors-et-Lozeron) ou dans le parc du presbytère de Blacons.
+			Parfois, nous allons dans d'autres lieux comme dans des salles des fêtes ou au théâtre de Saillans (un
+			ancien temple).
+			Autrement dit, le lieu pour vivre le culte n'est pas essentiel en soi et aucun temple n'est sacré.
+		</p>
+		<div class="container_left">
+			<img src="assets/images/porte_ouverte_peinture.jpg" alt="Porte ouverte en peinture"
+				title="Porte ouverte en peinture" width="200vw" style="margin-right:2vw;" />
+			<p>
+				Il y a tout de même une chose importante
+				dans l'approche protestante du temps cultuel : chacun se place devant Dieu, tel qu'il est, avec sa
+				conscience, nu pourrions-nous dire. En effet, nous avons la conviction
+				que les humains sont tous également aimés de Lui. C'est la raison pour laquelle tous les hommes et les
+				femmes, de toutes les nations,
+				et quels que soient leurs antécédents, sont accueillis dans notre Eglise. Tous ! Donc bienvenue.
+				Oui, le culte est ouvert à tous, même à ceux qui viennent simplement pour satisfaire leur curiosité.
+			</p>
+		</div>
+		<h2>La Bible et sa prédication</h2>
+		<p>
+			Avec la Réforme du XVI<sup>e</sup> siècle, la prédication est devenue l'élément central du culte. De quoi
+			s'agit-il ? Au cœur du culte,
+			il y a un temps où la Bible est ouverte et lue, et écoutée par l'assemblée comme une parole inspirée qui a
+			encore tant de choses à nous dire par son actualité.
+			Ensuite, et c'est là la prédication, cette parole entendue est méditée, interprétée, réfléchie, traduite
+			pour aujourd'hui. L'Esprit saint agissant,
+			cette réflexion du pasteur ou de l'officiant devient un enseignement (au sens le plus large) pour
+			l'assemblée.
+		</p>
+		<div class="container_left">
+			<img src="assets/images/Vincent_van_Gogh_Nature_morte_avec_Bible_1885.jpg"
+				alt="Nature morte avec Bible, de Vincent van Gogh (1885)"
+				title="Nature morte avec Bible, de Vincent van Gogh (1885)" width="200vw" style="margin-right:2vw;" />
+			<p>
+				En d'autres termes, la prédication s'offre à chacun pour l'aider à vivre devant et avec Dieu.
+				En donnant une place cruciale à la lecture biblique et à sa prédication, le culte réformé entend
+				célébrer l'amour inconditionnel de Dieu,
+				message fondamental qui unit et réunit les membres de notre Église.
+			</p>
+		</div>
+		<h2>Le déroulement du culte</h2>
+		<p>
+			Le culte réformé n'est pas un temps triste et monotone ! Entrecoupée de psaumes et de cantiques (nous
+			utilisons les recueils <b>Arc-en-ciel</b>
+			et <b>Alléluia</b>), la liturgie laisse une place importante aux chants, anciens et récents, comme à la
+			musique. Dans sa structure, elle est un dialogue
+			entre l'humain et Dieu. Le rôle de l'officiant (qu'il soit pasteur-théologien ou pas), s'il est important
+			dans le déroulement du culte, n'est pas essentiel.
+			C'est la raison pour laquelle, dans l'<b>Église protestante unie du Crestois</b>, la liturgie est souvent
+			dite à plusieurs voix,
+			rendant le culte encore plus vivant.
+		</p>
+		<p>
+			A titre indicatif, car chez les protestants rien n'est jamais figé et définitif, voici les principales
+			étapes du culte :
+		</p>
+		<div id="boite">
+			<ol>
+				<li>
+					<b>Accueil</b> : Ce temps initial de salutation et de bienvenue nous place devant Dieu et sa grâce.
+				</li>
+				<li>
+					<b>Louange</b> : Par des psaumes, des hymnes, des prières, des affirmations de
+					reconnaissance, nous adressons à Dieu notre merci.
+				</li>
+				<li>
+					<b>Loi de Dieu (ou volonté de Dieu)</b> : Comme un miroir, la loi de Dieu nous redit
+					notre humaine incapacité à satisfaire à 100&nbsp;% son exigence.
+					Placée après l'annonce de la grâce (6), on parlera alors de "volonté de Dieu" pour notre vie, une
+					exhortation à vivre pleinement l'amour du Christ.
+				</li>
+				<li>
+					<b>Prière de repentance</b> : Se repentir, c'est se tourner vers Dieu et confesser ses
+					péchés, c'est-à-dire reconnaître ses manquements et son incapacité à faire le bien exigé par la loi
+					de Dieu.
+					Il nous faut dès lors demander l'aide de Dieu et son pardon.
+				</li>
+				<li>
+					<b>Annonce de la grâce</b> : La grâce est une remise de dette, un pardon gratuit, une
+					libération donnée par Dieu qui est Amour infini.
+					Cette grâce offerte ôte en nous toute culpabilité et nous permet de repartir dans la vie, debout et
+					libre.
+				</li>
+				<li>
+					<b>Prière d'illumination</b> : Par ce temps de préparation à l'écoute de la Parole,
+					Dieu nous rend disponibles à entendre sa voix.
+				</li>
+				<li>
+					<b>Lecture(s) biblique(s)</b> : Il s'agit de la ou des lecture(s) biblique(s) du jour
+					ou de textes bibliques librement choisis par le prédicateur.
+				</li>
+				<li>
+					<b>Prédication</b> : Voir des <a href="predications.html" title="La sainte Cène">prédications</a>.
+				</li>
+				<li>
+					<b>Confession de foi</b> : Par un texte structuré, l'assemblée affirme sa confiance en
+					Dieu et proclame ses convictions chrétiennes.
+				</li>
+				<li>
+					<b>Sainte Cène</b> : Voir la <a href="cene.html" title="La sainte Cène">Cène</a>.
+				</li>
+				<li>
+					<b>Annonces et collecte</b> : Les activités de la semaine et la vie de l'Eglise sont
+					annoncées. Suit l'offrande qui est la collecte des dons de chacun
+					pour que l'Eglise puisse matériellement fonctionner. Donner de notre temps et de notre argent, c'est
+					répondre personnellement et concrètement à l'appel de Dieu.
+				</li>
+				<li>
+					<b>Prière d'intercession</b> : Décentrés de nous, nous portons devant Dieu le monde,
+					ses drames, ses fléaux, ses misères... lui demandant
+					son intervention et son aide. Cette prière se clot sur le Notre Père.
+				</li>
+				<li>
+					<b>Paroles d'envoi et de bénédiction</b> : Ce temps final est à la fois une
+					exhortation et un encouragement à aller dans le monde pour porter la Bonne Nouvelle.
+					Et Dieu sera là, au rendez-vous et à nos côtés, sur les chemins de la vie car il est
+					<i>Emmanuel</i>, litt. "Dieu avec nous".
+				</li>
+			</ol>
+		</div>
+		<!-- <p>
+		</p>
+		<div id="bdp"> Suppression BD-->
+	</main>
+    <footer>
+        <p>
+            <a href="mentions_légales.html">Mentions légales</a> | © EPU Crestois | Tous droits
+            réservés |
+            <a href="https://meteofrance.com/previsions-meteo-france/crest/26400" target="_blank"
+                onclick="ouvre(this.href);; return false;">
+                <i class="fas fa-cloud"></i></a>
+            Météo | Conception : NB-BD
+        </p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

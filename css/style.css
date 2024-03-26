@@ -1257,7 +1257,13 @@ h4 {
 }
 
 #boite>p {
-  margin: 6px;
+  /* propositions  */
+  /* code actuel */
+  /* margin:6px; */
+  /* remplacement par */
+  margin-top: 6px;
+
+
 }
 
 /* Ajout BD  léger padding entre les li des ol pour que ça soit un peu plus aéré*/
@@ -1323,7 +1329,7 @@ h4 {
 }
 /* ajout class pour effet sur liste dans confession de foi notamment */
 .boite-list{
-  margin:6px;
+  margin-top:6px;
 }
 
 /*# sourceMappingURL=style.css.map */

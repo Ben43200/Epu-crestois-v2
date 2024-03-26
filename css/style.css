@@ -1321,5 +1321,9 @@ h4 {
     font-size: 1em;
   }
 }
+/* ajout class pour effet sur liste dans confession de foi notamment */
+.boite-list{
+  margin:6px;
+}
 
 /*# sourceMappingURL=style.css.map */

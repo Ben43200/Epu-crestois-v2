@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta name="description" content="Venez découvrir l'Église protestante unie du Crestois" />
+
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Église protestante unie du Crestois</title>
+    <link href="assets/images/favicon.ico" rel="shortcut icon" />
+
+    <script src="https://kit.fontawesome.com/a528402c70.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body onload="fetchAsync()">
+    <header>
+        <div class="emplacement_logo">
+            <a href="page_logo.html"><img src="./assets/images/mini_logo_epu-crestois_2022.jpg"
+                    alt="Logo de l'Église protestante unie du Crestois"
+                    title="Logo de l'Église protestante unie du Crestois" class="mini_logo" /></a>
+        </div>
+        <div class="citation" id="quote"></div>
+        <a class="lien-adresse" href="https://goo.gl/maps/HfojvAwyPoK11SiZ7" target="_blank">
+            <div class="adresse">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3 class="adresse-temple">1 Place du Temple,</br>26 400 Crest, France</h3>
+            </div>
+        </a>
+        <nav>
+            <div id="mySidenav" class="sidenav">
+                <a id="closeBtn" name="close-burger" href="#hidden" class="close">×</a>
+                <ul class="menu">
+                    <li><a href="index.html" title="Retour à la page d'accueil">Accueil</a>
+                        <ul>
+                            <li><a href="qui_sommes-nous.html" title="Qui sommes-nous ?">Qui sommes-nous ?</a></li>
+                            <li><a href="ou_nous-trouver.html" title="Où nous trouver ?">Où nous trouver ?</a></li>
+                            <li><a href="notre_association.html" title="Notre association cultuelle">Notre
+                                    association</a></li>
+                            <li><a href="devenir_membre.html" title="Comment devenir membre ?">Devenir membre</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="En relation à Dieu">En relation à Dieu</a>
+                        <ul>
+                            <li><a href="culte.html" title="Le culte">Culte</a></li>
+                            <li><a href="bapteme.html" title="Le baptême">Baptême</a></li>
+                            <li><a href="cene.html" title="La sainte Cène">Cène</a></li>
+                            <li><a href="mariage.html" title="La bénédiction de mariage">Mariage</a></li>
+                            <li><a href="service_funebre.html" title="Le service funèbre">Service funèbre</a></li>
+                            <li><a href="predications.html" title="Prédications">Prédications</a></li>
+                            <li><a href="confession_de_foi.html" title="Des confessions de foi">Confessions de foi</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="Vie de l'Église">Vie de l'Église</a>
+                        <ul>
+                            <li><a href="ecole_biblique.html" title="Le Club biblique">Le Club biblique</a></li>
+                            <li><a href="kt-cine.html" title="Le KT-ciné">KT-ciné</a></li>
+                            <li><a href="partage_biblique.html" title="Le partage biblique oecuménique">Partage
+                                    biblique</a></li>
+                            <li><a href="foyers_mixtes.html" title="Les foyers mixtes">Foyers mixtes</a></li>
+                            <li><a href="reunion_priere.html" title="Réunion de prière">Réunion de prière</a></li>
+                            <li><a href="halte_spirituelle.html" title="Haltes spirituelles">Haltes spirituelles</a>
+                            </li>
+                            <li><a href="sacre_petit_choeur.html" title="Le Sacré Petit Chœur">Sacré Petit Chœur</a>
+                            </li>
+                            <li><a href="sacre_petit_orchestre.html" title="Le Sacré Petit Orchestre">Sacré Petit
+                                    Orchestre</a></li>
+                            <li><a href="aumonerie_hopital.html" title="L'aumônerie hospitalière">Aumônerie
+                                    hospitalière</a>
+                            </li>
+                            <li><a href="visite.html" title="Le groupe des visites">Visites</a></li>
+                            <li><a href="atelier_creatif.html" title="Atelier créatif">Atelier créatif</a></li>
+                            <li><a href="fetes.html" title="Les fêtes">Fêtes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="Les associations partenaires">Nos partenaires</a>
+                        <ul>
+                            <li><a href="entraide.html" title="L'Entraide Fraternelle Protestante">Entraide</a></li>
+                            <li><a href="amotec.html" title="L'association des Amis de l'orgue">AMOTEC</a></li>
+                            <li><a href="arbre.html" title="L'association de rénovation des bâtiments">ARBRE</a></li>
+                            <li><a href="eclaireurs.html"
+                                    title="Les Eclaireurs et Eclaireuses Unionistes de France">Éclaireurs</a></li>
+                            <li><a href="eglise_verte.html" title="Église verte">Église verte</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="Lire en ligne Message">Journal
+                            Message</a>
+                        <ul>
+                            <li><a href="./messages/message printemps 2024-98.pdf"
+                                    title="Lire en ligne le dernier Message">Dernier numéro</a></li>
+                            <li><a href="archives_message.html" title="Consulter les archives de Message">Les archives
+                                    du
+                                    Message</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="page_newsletters.html" title="Voir les newsletters">Newsletter</a>
+                    </li>
+                    <li>
+                        <a href="#" title="L'histoire de notre Église">Histoire</a>
+                        <ul>
+                            <li><a href="page_logo.html" title="Explications sur le logo">Le logo</a></li>
+                            <li><a href="reveil_a_crest.html" title="Le Réveil spirituel à Crest">Le Réveil à Crest</a>
+                            </li>
+                            <li><a href="bicentenaire.html" title="Le bicentenaire du temple de Crest">Le
+                                    bicentenaire</a>
+                            </li>
+                            <li><a href="ministres.html" title="Les pasteurs ayant travaillé sur le Crestois">Les
+                                    ministres</a></li>
+                            <li><a href="photos.html" title="Quelques photos">Photos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="faire_un_don.html" title="Faire un don en ligne">Faire un don</a>
+                    </li>
+                    <li><a href="en_direct.html" title="Regarder le culte en direct">En direct&nbsp;<img
+                                src="./assets/images/logo_youtube.webp" alt="Logo Youtube" title="Logo Youtube"
+                                width="20%" /></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+        </a>
+    </header>
+    <main>
+
+        <h1>Confessions de foi</h1>
+        <p class="introduction">
+            Dans l'<b>Église protestante unie du Crestois</b>, dimanche après dimanche, nous n'utilisons pas
+            une seule et même confession de foi, qui serait juste théologiquement, bibliquement, dogmatiquement, etc.
+            Nous préférons proclamer ce que nous croyons,
+            et en particulier cette confiance en le Dieu de Jésus Christ qui nous anime, avec des mots d'aujourd'hui,
+            des mots simples, actuels et adaptés aux circonstances, en lien avec la thématique du culte et le temps
+            liturgique, et surtout qui parlent
+            à l'assemblée. Pour illustrer cette pratique, nous joignons ci-après quelques confessions de foi, à la fois
+            diverses dans leurs formulations et en résonnance avec nos convictions...
+        </p>
+        <h2>Bonne nouvelle : Dieu nous accueille tels que nous sommes</h2>
+        <p>
+            En 2022, pour fêter les 200 ans du temple de Crest, nous nous sommes donné le défi d'écrire une confession
+            de foi acrostiche à partir du mot <i>bicentenaire</i>.
+        </p>
+        <div id="boite">
+            <ul>
+                <li><b>B</b>onne nouvelle : Dieu nous accueille tels que nous sommes.</li>
+                <li><b>I</b>l ne tient nullement compte de nos mérites et de nos bonnes œuvres,</li>
+                <li><b>C</b>ar sa justice n’est pas celle des êtres humains…</li>
+                <li><b>N</b>ous croyons qu’en Jésus, le Christ, mort sur la croix et ressuscité des morts,</li>
+                <li><b>T</b>out a été accompli pour nous libérer du mal, du malheur et de la peur.</li>
+                <li><b>E</b>n lui, Dieu offre une espérance à chacune et à chacun.</li>
+                <li><b>N</b>ous sommes libres et nous pouvons désormais vivre en toute confiance devant lui :</li>
+                <li><b>A</b>u cœur de nos existences, l’Esprit saint atteste qu’il nous a choisis par grâce.</li>
+                <li><b>I</b>l fait désormais toutes choses nouvelles, conformément à ses promesses.</li>
+                <li><b>R</b>ien, ni personne, ne pourra jamais nous éloigner de son règne d’amour et de paix ! </li>
+                <li><b>E</b>ntendez-vous ? Il vient… Amen.</li>
+            </ul>
+            <p>
+                (Église protestante unie du Crestois, confession de foi écrite à l'occasion du bicentenaire de la
+                construction du temple de Crest, 2022)
+            </p>
+        </div>
+        <h2>Dieu humble et démuni, je crois en toi</h2>
+        <div id="boite">
+            <p>
+                Dieu humble et démuni, je crois en toi.
+            </p>
+            <ul>
+                <li>Tu es proche de nous</li>
+                <li>et dépouillé de tout pouvoir.</li>
+                <li>Je ne sais presque rien de toi.</li>
+                <li>Ce que je crois savoir </li>
+                <li>ce sont mes approches de l’Écriture </li>
+                <li>qui me le disent…</li>
+                <li>Et aujourd’hui, je le résume ainsi :</li>
+            </ul>
+            <ul>
+                <li>Jésus est venu annoncer ton règne. </li>
+                <li>La résignation et la fatalité n’y ont pas de place.</li>
+                <li>D’ailleurs, ce n’est pas un lieu, mais un état,</li>
+                <li>une certaine façon d’accepter et de mener sa vie.</li>
+            </ul>
+            <ul>
+                <li>Ton règne implique une représentation renouvelée</li>
+                <li>de ma relation à toi et aux autres.</li>
+               <li>En effet, ta royauté est à comprendre</li> 
+                <li>comme l’amour d’un père pour ses enfants.</li>
+                <li>Je n’ai pas compris cette relation privilégiée</li>
+                <li>tant que je n’aime pas les autres comme des frères.</li>
+            </ul>
+            <ul>
+                <li>Ton règne est à la fois donné et à créer.</li>
+                <li>Il est présent et futur simultanément.</li>
+                <li>Il est déjà sur terre sans être de ce monde.</li>
+                <li>Il est aussi à venir car je ne l’entrevois que par la foi.</li>
+            </ul>
+            <p>
+                Dieu humble et démuni, je crois en toi.
+            </p>
+            <p>
+                (Nicolas Baud)
+            </p>
+        </div>
+        <h2>Dieu est Esprit</h2>
+        <div id="boite">
+            <ul>
+               <li> Dieu est Esprit</li>
+                <li>et il faut que ceux qui l’adorent,</li>
+                <li>l’adorent en esprit et en vérité.</li>
+            </ul>
+            <ul>
+                <li>Dieu est Lumière :</li>
+                <li>si nous marchons dans la lumière,</li>
+                <li>nous communions les uns avec les autres et avec Dieu.</li>
+            </ul>
+            <ul>
+                <li>Dieu est Vie :</li>
+                <li>ceux qui s’attendent à l’Éternel</li>
+                <li>renouvellent leurs forces comme celles de l’aigle.</li>
+            </ul>
+            <ul>
+               <li> Dieu est Amour : </li>
+                <li>quiconque aime est né de Dieu et connaît Dieu</li>
+                <li>et nous savons que nous sommes passés de la mort à la vie,</li>
+                <li>parce que nous aimons.</li>
+                <li>Gloire soit à Dieu !</li>
+            </ul>
+            <p>
+                (d’après la liturgie de la communauté de Pomeyrol)
+            </p>
+        </div>
+        <h2>Crois, ma sœur, mon frère, avec moi</h2>
+        <p>
+            Pour l'anecdote, cette confession de foi fut écrite en 2006 par un petit groupe de paroissiens à l’occasion
+            du centenaire de nos deux associations cultuelles d'alors.
+        </p>
+        <div id="boite">
+            <ul>
+                <li><b>C</b>rois, ma sœur, mon frère, avec moi.</li>
+                <li><b>E</b>n le Dieu de Jésus de Nazareth.</li>
+            <li><b>N</b>ul n’est semblable à lui.</li>
+                <li><b>T</b>out amour, il nous donne la liberté</li>
+                <li><b>E</b>t nous assure de son pardon en Christ.</li>
+                <li><b>N</b>otre Père, par la présence de son Esprit, remédie à notre faiblesse.</li>
+                <li><b>A</b>vec lui, la vie surgit et n’a pas de fin.</li>
+                <li><b>I</b>l nous veut pleinement hommes,</li>
+                <li><b>R</b>esponsables, attentifs aux autres, respectueux de la terre et ses habitants.</li>
+                <li><b>E</b>spère, ma sœur, mon frère, avec moi. Espère en Dieu.</li>
+            </p>
+            <p>
+                (Église réformée de Crest, Confession de foi du Centenaire, 28/03/2006)
+            </p>
+        </div>
+        <h2>Je crois que Dieu peut et veut faire naître le bien</h2>
+        <p>
+            Une confession de foi que nous devons au pasteur et théologien Dietrich Bonhoeffer (1909-1945) qui a résisté
+            au nazisme jusqu'à en perdre la vie.
+        </p>
+        <div id="boite">
+            <p>
+                Je crois que Dieu peut et veut faire naître le bien à partir de tout, même du mal extrême.</br>
+                Aussi a-t-il besoin d’hommes pour lesquels « toutes choses concourent au bien ».
+            </p>
+            <ul class="boite-list">
+                <li>Je crois que Dieu veut nous donner chaque fois que nous nous trouvons dans une situation difficile</li>
+                <li>la force de résistance dont nous avons besoin. </li>
+                <li>Mais il ne la donne pas d’avance, afin que nous ne comptions pas sur nous-mêmes, mais sur lui seul.</li>
+            </ul>
+               <p> Dans cette certitude, toute peur de l’avenir devrait être surmontée.</p>
+            
+            <p>
+                Je crois que nos fautes et nos erreurs ne sont pas vaines </br>
+                et qu’il n’est pas plus difficile à Dieu d’en venir à bout </br>
+                que de nos prétendues bonnes actions.
+            </p>
+            <p>
+                Je crois que Dieu n’est pas une fatalité hors du temps, </br>
+                mais qu’il attend nos prières sincères et nos actions responsables, </br>
+                et qu’il y répond.
+            </p>
+            <p>
+                (Dietrich Bonhoeffer, in : "Résistance et Soumission")
+            </p>
+        </div>
+        <h2>Je crois en toi, Jésus, Fils de l’homme (Jn 9)</h2>
+        <div id="boite">
+            <p>
+                Je crois en toi, Jésus, Fils de l’homme. </br>
+                Tu es le Christ, le Seigneur. </br>
+                Sûr, tu viens de Dieu, </br>
+                car tu as pu changer le cours de mon existence. </br>
+                J’étais couvert de la boue tenace </br>
+                qu’on appelle le « péché » </br>
+                et c’est toi qui m’a lavé. </br>
+                J’étais aveugle depuis toujours </br>
+                et c’est toi qui m’a fait recouvrer la vue.
+            </p>
+            <p>
+                Je crois en toi, Jésus, Fils de l’homme. </br>
+                Tu es le Christ, le Seigneur. </br>
+                Je crois que tu es la lumière du monde </br>
+                parce que tu es précisément la lumière de ma vie. </br>
+                Aujourd’hui je sais une chose : </br>
+                maintenant je vois, maintenant je crois. </br>
+                Seigneur, à toi la gloire !
+            </p>
+            <p>
+                (d’après Jn 9, adaptation : Nicolas Baud)
+            </p>
+        </div>
+        <h2>Je crois que le Fils de Dieu est Jésus-Christ (Ac 8,37)</h2>
+        <div id="boite">
+            <p>
+                Philippe dit à l’eunuque : </br>
+                Si tu crois de tout ton cœur, </br>
+                c’est possible pour toi d’être baptisé.
+            </p>
+            <p>
+                L’Éthiopien répondit : </br>
+                Je crois que le Fils de Dieu est Jésus-Christ.</br>
+            </p>
+            <p>
+                (Ac 8,37)
+            </p>
+        </div>
+        <h2>Nous croyons que rien n’est sacré en dehors de Dieu</h2>
+        <p>
+            Cette confession de foi est librement inspirée d'un brochure de la Fédération Protestante de France (2009).
+        </p>
+        <div id="boite">
+            <p>
+                Nous croyons que rien n’est sacré en dehors de Dieu.</br>
+                Parce que Dieu est un Dieu de liberté,</br>
+                aucune valeur, idéologie ou institution</br>
+                ne peut revêtir un caractère absolu ou universel.
+            </p>
+            <p>
+                Nous croyons que Dieu aime chacun gratuitement.</br>
+                Cet amour gratuit du Dieu de Jésus-Christ </br>
+                rend les hommes et les femmes aptes, à leur tour, </br>
+                à aimer les autres gratuitement.
+            </p>
+            <p>
+                Nous croyons que l’essentiel, c’est la foi.</br>
+                Elle est une relation de confiance avec Dieu</br>
+                qui libère et pardonne.</br>
+                C’est la réponse humaine à la déclaration d’amour </br>
+                faite à tous par Dieu.
+            </p>
+            <p>
+                Nous croyons que la lecture de la Bible nourrit notre foi.</br>
+                Au travers des témoignages humains,</br>
+                la Bible nous fait entendre la Parole de Dieu.</br>
+                Cette Parole nous appelle à des choix responsables.
+            </p>
+            <p>
+                Nous croyons qu’il y a nécessité de se réformer sans cesse.</br>
+                En référence à l’Évangile,</br>
+                les Églises et les croyants doivent sans cesse </br>
+                porter un regard critique et interrogateur </br>
+                sur leur propre fonctionnement.
+            </p>
+            <p>
+                Nous croyons que nous sommes tous appelés à témoigner.</br>
+                Chaque chrétien a une place identique au sein de l’Église, </br>
+                seules les fonctions diffèrent.</br>
+                Pasteurs et laïcs participent au gouvernement de l’Église.</br>
+                Amen.
+            </p>
+            <p>
+                (adaptation : Nicolas Baud)
+            </p>
+        </div>
+        <p>
+        </p>
+    </main>
+    <footer>
+        <p>
+            <a href="mentions_légales.html">Mentions légales</a> | © EPU Crestois | Tous droits
+            réservés |
+            <a href="https://meteofrance.com/previsions-meteo-france/crest/26400" target="_blank"
+                onclick="ouvre(this.href);; return false;">
+                <i class="fas fa-cloud"></i></a>
+            Météo | Conception : NB-BD
+        </p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

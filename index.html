@@ -5,15 +5,30 @@
     <meta name="description" content="Venez découvrir l'Église protestante unie du Crestois" />
 
     <meta charset="utf-8" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Église protestante unie du Crestois</title>
     <link href="assets/images/favicon.ico" rel="shortcut icon" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';
+    script-src 'report-sample' 'self' https://kit.fontawesome.com/a528402c70.js  'nonce-rAnd0m';
+    style-src 'report-sample' 'self';
+    object-src 'none';
+    base-uri 'self';
+    connect-src 'self' https://ka-f.fontawesome.com;
+    font-src 'self' https://ka-f.fontawesome.com;
+    frame-src 'self';
+    img-src 'self';
+    manifest-src 'self';
+    media-src 'self';
 
-    <script src="https://kit.fontawesome.com/a528402c70.js" crossorigin="anonymous" defer></script>
+    worker-src 'none';">
+
+
+    <script src="https://kit.fontawesome.com/a528402c70.js" integrity="sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE=" nonce="rAnd0m" crossorigin="anonymous" defer></script>
 </head>
 
-<body onload="fetchAsync()">
+<!-- <body onload="fetchAsync()"> -->
+    <body>
     <header>
         <div class="emplacement_logo">
             <a href="page_logo.html"><img src="mini_logo_epu-crestois_2022.jpg"
@@ -987,7 +1002,7 @@
             Météo | v. 2.2 | Conception : NB-BD
         </p>
     </footer>
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
 </body>
 
 </html>

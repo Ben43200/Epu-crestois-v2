@@ -9,6 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Église protestante unie du Crestois</title>
     <link href="assets/images/favicon.ico" rel="shortcut icon" />
+    <script src="https://kit.fontawesome.com/a528402c70.js" crossorigin="anonymous" defer></script>
+
+
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self';
     script-src 'report-sample' 'self' https://kit.fontawesome.com/a528402c70.js 'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE=' 'nonce-rAnd0m';
     style-src 'report-sample' 'self' 'sha256-bepHRYpM181zEsx4ClPGLgyLPMyNCxPBrA6m49/Ozqg=';
@@ -23,8 +26,9 @@
     form-action 'self';
     worker-src 'none';"> -->
 
+    <!-- Début code ok mais avec csp mais sans script.js -->
 
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self';
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self';
     script-src 'report-sample' 'self' https://kit.fontawesome.com/a528402c70.js 'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE=' 'nonce-rAnd0m';
     style-src 'unsafe-inline';
     object-src 'none';
@@ -39,235 +43,246 @@
     worker-src 'none';">
 
 
-    <script src="https://kit.fontawesome.com/a528402c70.js" integrity="sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE= sha256-iuCZriBuybIR37PfHCwwGXnSHxztA7HX+V3wrDxSV10= sha256-Sltxz+gM4Ir/rDlcx+WW5I6b3fCnpk4KwgjoAfbRKDI=" nonce="rAnd0m" crossorigin="anonymous" defer></script>
+    <script src="https://kit.fontawesome.com/a528402c70.js" integrity="sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE= sha256-iuCZriBuybIR37PfHCwwGXnSHxztA7HX+V3wrDxSV10= sha256-Sltxz+gM4Ir/rDlcx+WW5I6b3fCnpk4KwgjoAfbRKDI=" nonce="rAnd0m" crossorigin="anonymous" defer></script> -->
+
+    <!-- Fin code ok avec csp et mais sans  script.js -->
+    
 </head>
 
-<!-- <body onload="fetchAsync()"> -->
+<body onload="fetchAsync()">
+
     <body>
-    <header>
-        <div class="emplacement_logo">
-            <a href="page_logo.html"><img src="mini_logo_epu-crestois_2022.jpg"
-                    alt="Logo de l'Église protestante unie du Crestois"
-                    title="Logo de l'Église protestante unie du Crestois" class="mini_logo" /></a>
-        </div>
-        <div class="citation" id="quote"></div>
-        <a class="lien-adresse" href="https://goo.gl/maps/HfojvAwyPoK11SiZ7" target="_blank">
-            <div class="adresse">
-                <i class="fas fa-map-marker-alt"></i>
-                <h3 class="adresse-temple">1 Place du Temple,</br>26 400 Crest, France</h3>
+        <header>
+            <div class="emplacement_logo">
+                <a href="page_logo.html"><img src="mini_logo_epu-crestois_2022.jpg"
+                        alt="Logo de l'Église protestante unie du Crestois"
+                        title="Logo de l'Église protestante unie du Crestois" class="mini_logo" /></a>
             </div>
-        </a>
-        <nav>
-            <div id="mySidenav" class="sidenav">
-                <a id="closeBtn" name="close-burger" href="#hidden" class="close">×</a>
-                <ul class="menu">
-                    <li><a href="index.html" title="Retour à la page d'accueil">Accueil</a>
-                        <ul>
-                            <li><a href="qui_sommes-nous.html" title="Qui sommes-nous ?">Qui sommes-nous ?</a></li>
-                            <li><a href="ou_nous-trouver.html" title="Où nous trouver ?">Où nous trouver ?</a></li>
-                            <li><a href="notre_association.html" title="Notre association cultuelle">Notre
-                                    association</a></li>
-                            <li><a href="devenir_membre.html" title="Comment devenir membre ?">Devenir membre</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" title="En relation à Dieu">En relation à Dieu</a>
-                        <ul>
-                            <li><a href="culte.html" title="Le culte">Culte</a></li>
-                            <li><a href="bapteme.html" title="Le baptême">Baptême</a></li>
-                            <li><a href="cene.html" title="La sainte Cène">Cène</a></li>
-                            <li><a href="mariage.html" title="La bénédiction de mariage">Mariage</a></li>
-                            <li><a href="service_funebre.html" title="Le service funèbre">Service funèbre</a></li>
-                            <li><a href="predications.html" title="Prédications">Prédications</a></li>
-                            <li><a href="confession_de_foi.html" title="Des confessions de foi">Confessions de foi</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#" title="Vie de l'Église">Vie de l'Église</a>
-                        <ul>
-                            <li><a href="ecole_biblique.html" title="Le Club biblique">Le Club biblique</a></li>
-                            <li><a href="kt-cine.html" title="Le KT-ciné">KT-ciné</a></li>
-                            <li><a href="partage_biblique.html" title="Le partage biblique oecuménique">Partage
-                                    biblique</a></li>
-                            <li><a href="foyers_mixtes.html" title="Les foyers mixtes">Foyers mixtes</a></li>
-                            <li><a href="reunion_priere.html" title="Réunion de prière">Réunion de prière</a></li>
-                            <li><a href="halte_spirituelle.html" title="Haltes spirituelles">Haltes spirituelles</a>
-                            </li>
-                            <li><a href="sacre_petit_choeur.html" title="Le Sacré Petit Chœur">Sacré Petit Chœur</a>
-                            </li>
-                            <li><a href="sacre_petit_orchestre.html" title="Le Sacré Petit Orchestre">Sacré Petit
-                                    Orchestre</a></li>
-                            <li><a href="aumonerie_hopital.html" title="L'aumônerie hospitalière">Aumônerie
-                                    hospitalière</a>
-                            </li>
-                            <li><a href="visite.html" title="Le groupe des visites">Visites</a></li>
-                            <li><a href="atelier_creatif.html" title="Atelier créatif">Atelier créatif</a></li>
-                            <li><a href="fetes.html" title="Les fêtes">Fêtes</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" title="Les associations partenaires">Nos partenaires</a>
-                        <ul>
-                            <li><a href="entraide.html" title="L'Entraide Fraternelle Protestante">Entraide</a></li>
-                            <li><a href="amotec.html" title="L'association des Amis de l'orgue">AMOTEC</a></li>
-                            <li><a href="arbre.html" title="L'association de rénovation des bâtiments">ARBRE</a></li>
-                            <li><a href="eclaireurs.html"
-                                    title="Les Eclaireurs et Eclaireuses Unionistes de France">Éclaireurs</a></li>
-                            <li><a href="eglise_verte.html" title="Église verte">Église verte</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" title="Lire en ligne Message">Journal
-                            Message</a>
-                        <ul>
-                            <li><a href="./messages/message printemps 2024-98.pdf"
-                                    title="Lire en ligne le dernier Message">Dernier numéro</a></li>
-                            <li><a href="archives_message.html" title="Consulter les archives de Message">Les archives
-                                    du
-                                    Message</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="page_newsletters.html" title="Voir les newsletters">Newsletter</a>
-                    </li>
-                    <li>
-                        <a href="#" title="L'histoire de notre Église">Histoire</a>
-                        <ul>
-                            <li><a href="page_logo.html" title="Explications sur le logo">Le logo</a></li>
-                            <li><a href="reveil_a_crest.html" title="Le Réveil spirituel à Crest">Le Réveil à Crest</a>
-                            </li>
-                            <li><a href="bicentenaire.html" title="Le bicentenaire du temple de Crest">Le
-                                    bicentenaire</a>
-                            </li>
-                            <li><a href="ministres.html" title="Les pasteurs ayant travaillé sur le Crestois">Les
-                                    ministres</a></li>
-                            <li><a href="fresque_beaufort.html" title="La fresque du temple de Beaufort">La fresque de
-                                    Beaufort</a></li>
-                            <li><a href="photos.html" title="Quelques photos">Photos</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="faire_un_don.html" title="Faire un don en ligne">Faire un don</a>
-                    </li>
-                    <li><a href="en_direct.html" title="Regarder le culte en direct">En direct&nbsp;<img
-                                src="./assets/images/logo_youtube.webp" alt="Logo Youtube" title="Logo Youtube"
-                                width="20%" /></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <a href="#" id="openBtn">
-            <span class="burger-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-        </a>
-    </header>
-    <main>
-        <!-- section Actualité -->
-        <h3 class="actualite-titre">Actualité</h3>
-        <div class="actualite-texte">
-            <a href="./newsletters/Le crépuscule crestois15.pdf" target="_blank"
-                onclick="ouvre(this.href);; return false;" class="actualite-lien">
-                Newsletter : Le crépuscule crestois #15
+            <div class="citation" id="quote"></div>
+            <a class="lien-adresse" href="https://goo.gl/maps/HfojvAwyPoK11SiZ7" target="_blank">
+                <div class="adresse">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3 class="adresse-temple">1 Place du Temple,</br>26 400 Crest, France</h3>
+                </div>
             </a>
-            <p class="actualite-content">La Bonne Nouvelle en action : Adolf von Harnack (1851-1930), théologien
-                luthérien allemand, a étudié le
-                christianisme des premiers temps et...</p>
-        </div>
-        <div class="actualite-texte">
-            <a href="https://www.protestants.org/les-responsables-religieux-chretiens-de-france-appellent-au-cessez-le-feu/"
-                class="actualite-lien">Les
-                responsables religieux chrétiens appellent au cessez-le-feu</a>
-            <p class="actualite-content second-content">"Nous, responsables religieux chrétiens de France, sommes solidaires de toutes
-                les victimes de la guerre entre Israël et le Hamas et appelons au cessez le feu.</p>
-
-        </div>
-        <!-- <p></br></p> Suppression BD remplacement par css et ajout class "second-content" avec du padding bottom -->
-
-
-        <section class="container_accueil">
-
-            <div class="slider">
-                <!-- Carrousel -->
-                <div class="slides">
-                    <img src="./assets/images/im1.webp" alt="Photo 1" title="¨Photo 1" class="slide" />
-                    <img src="./assets/images/im2.webp" alt="Photo 2" title="¨Photo 2" class="slide" />
-                    <img src="./assets/images/im3.webp" alt="Photo 3" title="¨Photo 3" class="slide" />
-                    <img src="./assets/images/im4.webp" alt="Photo 4" title="¨Photo 4" class="slide" />
-                    <img src="./assets/images/im5.webp" alt="Photo 5" title="¨Photo 5" class="slide" />
-                    <img src="./assets/images/im6.webp" alt="Photo 6" title="¨Photo 6" class="slide" />
-                    <img src="./assets/images/im7.webp" alt="Photo 7" title="¨Photo 7" class="slide" />
+            <nav>
+                <div id="mySidenav" class="sidenav">
+                    <a id="closeBtn" name="close-burger" href="#hidden" class="close">×</a>
+                    <ul class="menu">
+                        <li><a href="index.html" title="Retour à la page d'accueil">Accueil</a>
+                            <ul>
+                                <li><a href="qui_sommes-nous.html" title="Qui sommes-nous ?">Qui sommes-nous ?</a></li>
+                                <li><a href="ou_nous-trouver.html" title="Où nous trouver ?">Où nous trouver ?</a></li>
+                                <li><a href="notre_association.html" title="Notre association cultuelle">Notre
+                                        association</a></li>
+                                <li><a href="devenir_membre.html" title="Comment devenir membre ?">Devenir membre</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" title="En relation à Dieu">En relation à Dieu</a>
+                            <ul>
+                                <li><a href="culte.html" title="Le culte">Culte</a></li>
+                                <li><a href="bapteme.html" title="Le baptême">Baptême</a></li>
+                                <li><a href="cene.html" title="La sainte Cène">Cène</a></li>
+                                <li><a href="mariage.html" title="La bénédiction de mariage">Mariage</a></li>
+                                <li><a href="service_funebre.html" title="Le service funèbre">Service funèbre</a></li>
+                                <li><a href="predications.html" title="Prédications">Prédications</a></li>
+                                <li><a href="confession_de_foi.html" title="Des confessions de foi">Confessions de
+                                        foi</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" title="Vie de l'Église">Vie de l'Église</a>
+                            <ul>
+                                <li><a href="ecole_biblique.html" title="Le Club biblique">Le Club biblique</a></li>
+                                <li><a href="kt-cine.html" title="Le KT-ciné">KT-ciné</a></li>
+                                <li><a href="partage_biblique.html" title="Le partage biblique oecuménique">Partage
+                                        biblique</a></li>
+                                <li><a href="foyers_mixtes.html" title="Les foyers mixtes">Foyers mixtes</a></li>
+                                <li><a href="reunion_priere.html" title="Réunion de prière">Réunion de prière</a></li>
+                                <li><a href="halte_spirituelle.html" title="Haltes spirituelles">Haltes spirituelles</a>
+                                </li>
+                                <li><a href="sacre_petit_choeur.html" title="Le Sacré Petit Chœur">Sacré Petit Chœur</a>
+                                </li>
+                                <li><a href="sacre_petit_orchestre.html" title="Le Sacré Petit Orchestre">Sacré Petit
+                                        Orchestre</a></li>
+                                <li><a href="aumonerie_hopital.html" title="L'aumônerie hospitalière">Aumônerie
+                                        hospitalière</a>
+                                </li>
+                                <li><a href="visite.html" title="Le groupe des visites">Visites</a></li>
+                                <li><a href="atelier_creatif.html" title="Atelier créatif">Atelier créatif</a></li>
+                                <li><a href="fetes.html" title="Les fêtes">Fêtes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" title="Les associations partenaires">Nos partenaires</a>
+                            <ul>
+                                <li><a href="entraide.html" title="L'Entraide Fraternelle Protestante">Entraide</a></li>
+                                <li><a href="amotec.html" title="L'association des Amis de l'orgue">AMOTEC</a></li>
+                                <li><a href="arbre.html" title="L'association de rénovation des bâtiments">ARBRE</a>
+                                </li>
+                                <li><a href="eclaireurs.html"
+                                        title="Les Eclaireurs et Eclaireuses Unionistes de France">Éclaireurs</a></li>
+                                <li><a href="eglise_verte.html" title="Église verte">Église verte</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" title="Lire en ligne Message">Journal
+                                Message</a>
+                            <ul>
+                                <li><a href="./messages/message printemps 2024-98.pdf"
+                                        title="Lire en ligne le dernier Message">Dernier numéro</a></li>
+                                <li><a href="archives_message.html" title="Consulter les archives de Message">Les
+                                        archives
+                                        du
+                                        Message</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="page_newsletters.html" title="Voir les newsletters">Newsletter</a>
+                        </li>
+                        <li>
+                            <a href="#" title="L'histoire de notre Église">Histoire</a>
+                            <ul>
+                                <li><a href="page_logo.html" title="Explications sur le logo">Le logo</a></li>
+                                <li><a href="reveil_a_crest.html" title="Le Réveil spirituel à Crest">Le Réveil à
+                                        Crest</a>
+                                </li>
+                                <li><a href="bicentenaire.html" title="Le bicentenaire du temple de Crest">Le
+                                        bicentenaire</a>
+                                </li>
+                                <li><a href="ministres.html" title="Les pasteurs ayant travaillé sur le Crestois">Les
+                                        ministres</a></li>
+                                <li><a href="fresque_beaufort.html" title="La fresque du temple de Beaufort">La fresque
+                                        de
+                                        Beaufort</a></li>
+                                <li><a href="photos.html" title="Quelques photos">Photos</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="faire_un_don.html" title="Faire un don en ligne">Faire un don</a>
+                        </li>
+                        <li><a href="en_direct.html" title="Regarder le culte en direct">En direct&nbsp;<img
+                                    src="./assets/images/logo_youtube.webp" alt="Logo Youtube" title="Logo Youtube"
+                                    width="20%" /></a>
+                        </li>
+                    </ul>
                 </div>
+            </nav>
+
+            <a href="#" id="openBtn">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+            </a>
+        </header>
+        <main>
+            <!-- section Actualité -->
+            <h3 class="actualite-titre">Actualité</h3>
+            <div class="actualite-texte">
+                <a href="./newsletters/Le crépuscule crestois15.pdf" target="_blank"
+                    onclick="ouvre(this.href);; return false;" class="actualite-lien">
+                    Newsletter : Le crépuscule crestois #15
+                </a>
+                <p class="actualite-content">La Bonne Nouvelle en action : Adolf von Harnack (1851-1930), théologien
+                    luthérien allemand, a étudié le
+                    christianisme des premiers temps et...</p>
             </div>
-            <!-- section class="accueil_content"> Mot d'accueil -->
-            <div id="txt_accueil">
-                <h1>L'Église protestante unie du Crestois vous accueille</h1>
-                <p class="introduction">
-                    Notre Église est heureuse de recevoir votre visite.
-                    En naviguant sur ce site vous allez découvrir tout ce qu’elle peut vous proposer.
-                </p>
-                <h2>Un hasard ?</h2>
-                <p>
-                    Si vous êtes là, ce n'est pas un hasard. Sans doute avez-vous une bonne raison... Nul doute que
-                    vous êtes présent sur notre site pour un but précis.
-                    Il est même fort probable que vous ayez une intention ou un objectif en étant là, et que ce ne
-                    soit pas un simple détour de navigation sur le web.
-                    Vous recherchez apparemment quelque chose ou quelqu'un... Mais quoi ? ou qui ? Nous ne savons
-                    rien de vos motivations, ni de vos croyances.
-                    Peut-être voulez-vous des renseignements pratiques sur notre communauté, sur les cultes, sur ses
-                    événements passés ou prochains, sur nos convictions,
-                    sur l'histoire de notre Église... Peut-être souhaitez-vous trouver du réconfort ou la paix
-                    intérieure,
-                    rencontrer d'autres personnes ou le pasteur de notre Église, ou même vous rapprocher de Dieu...
-                </p>
-                <h2>Une recherche...</h2>
-                <div class="container_left">
-                    <img src="./assets/images/Plaque_verset.webp" alt="Plaque à l'entrée du temple de Crest"
-                        title="Plaque à l'entrée du temple de Crest" width="200vw" />
-                    <p>
-                        Peu importe votre raison ! Dans la Bible, il y a un verset bien connu où Jésus dit ceci :
-                        "<i>Demandez, et l'on vous donnera ; cherchez, et vous trouverez ;
-                            frappez, et l'on vous ouvrira.</i>" (Lc 11,9)
-                        Eh bien, vous frappez à la bonne porte. L'<b>Église protestante unie du
-                            Crestois</b> est une assemblée ouverte à tous, accueillante, bienveillante,
-                        tolérante,
-                        multicolore (à l'image son logo). Oui, nos temples sont ouverts aux enfants et aux adultes,
-                        aux forts et aux faibles, aux gens de passage et aux habitués, aux riches et aux pauvres...
-                        Semaine après semaine, chacun est accueilli avec ses quêtes, ses questions, ses recherches,
-                        ses demandes de réponses
-                        sur la vie, sur le monde, sur les hommes et les femmes, et bien évidemment sur Dieu,
-                        l'Eternel, celui qui est plus grand que les vivants.
-                        C'est ainsi qu'ensemble nous cheminons à la suite de Jésus Christ, en demandant, en
-                        cherchant, en frappant.
+            <div class="actualite-texte">
+                <a href="https://www.protestants.org/les-responsables-religieux-chretiens-de-france-appellent-au-cessez-le-feu/"
+                    class="actualite-lien">Les
+                    responsables religieux chrétiens appellent au cessez-le-feu</a>
+                <p class="actualite-content second-content">"Nous, responsables religieux chrétiens de France, sommes
+                    solidaires de toutes
+                    les victimes de la guerre entre Israël et le Hamas et appelons au cessez le feu.</p>
+
+            </div>
+            <!-- <p></br></p> Suppression BD remplacement par css et ajout class "second-content" avec du padding bottom -->
+
+
+            <section class="container_accueil">
+
+                <div class="slider">
+                    <!-- Carrousel -->
+                    <div class="slides">
+                        <img src="./assets/images/im1.webp" alt="Photo 1" title="¨Photo 1" class="slide" />
+                        <img src="./assets/images/im2.webp" alt="Photo 2" title="¨Photo 2" class="slide" />
+                        <img src="./assets/images/im3.webp" alt="Photo 3" title="¨Photo 3" class="slide" />
+                        <img src="./assets/images/im4.webp" alt="Photo 4" title="¨Photo 4" class="slide" />
+                        <img src="./assets/images/im5.webp" alt="Photo 5" title="¨Photo 5" class="slide" />
+                        <img src="./assets/images/im6.webp" alt="Photo 6" title="¨Photo 6" class="slide" />
+                        <img src="./assets/images/im7.webp" alt="Photo 7" title="¨Photo 7" class="slide" />
+                    </div>
+                </div>
+                <!-- section class="accueil_content"> Mot d'accueil -->
+                <div id="txt_accueil">
+                    <h1>L'Église protestante unie du Crestois vous accueille</h1>
+                    <p class="introduction">
+                        Notre Église est heureuse de recevoir votre visite.
+                        En naviguant sur ce site vous allez découvrir tout ce qu’elle peut vous proposer.
                     </p>
-                </div>
-                <h2>Eurêka !</h2>
-                <p>
-                    Et, parce que nos portes vous sont ouvertes, nul doute que vous trouverez vos propres réponses.
-                    "<i>J'ai cherché l'Eternel, et il m'a répondu ;
-                        Il m'a délivré de toutes mes peurs</i>", dit un autre verset. (Ps 34,4)
-                    Qu'il en soit de même pour vous !
-                </p>
-            </p>
-            <!-- <p>
+                    <h2>Un hasard ?</h2>
+                    <p>
+                        Si vous êtes là, ce n'est pas un hasard. Sans doute avez-vous une bonne raison... Nul doute que
+                        vous êtes présent sur notre site pour un but précis.
+                        Il est même fort probable que vous ayez une intention ou un objectif en étant là, et que ce ne
+                        soit pas un simple détour de navigation sur le web.
+                        Vous recherchez apparemment quelque chose ou quelqu'un... Mais quoi ? ou qui ? Nous ne savons
+                        rien de vos motivations, ni de vos croyances.
+                        Peut-être voulez-vous des renseignements pratiques sur notre communauté, sur les cultes, sur ses
+                        événements passés ou prochains, sur nos convictions,
+                        sur l'histoire de notre Église... Peut-être souhaitez-vous trouver du réconfort ou la paix
+                        intérieure,
+                        rencontrer d'autres personnes ou le pasteur de notre Église, ou même vous rapprocher de Dieu...
+                    </p>
+                    <h2>Une recherche...</h2>
+                    <div class="container_left">
+                        <img src="./assets/images/Plaque_verset.webp" alt="Plaque à l'entrée du temple de Crest"
+                            title="Plaque à l'entrée du temple de Crest" width="200vw" />
+                        <p>
+                            Peu importe votre raison ! Dans la Bible, il y a un verset bien connu où Jésus dit ceci :
+                            "<i>Demandez, et l'on vous donnera ; cherchez, et vous trouverez ;
+                                frappez, et l'on vous ouvrira.</i>" (Lc 11,9)
+                            Eh bien, vous frappez à la bonne porte. L'<b>Église protestante unie du
+                                Crestois</b> est une assemblée ouverte à tous, accueillante, bienveillante,
+                            tolérante,
+                            multicolore (à l'image son logo). Oui, nos temples sont ouverts aux enfants et aux adultes,
+                            aux forts et aux faibles, aux gens de passage et aux habitués, aux riches et aux pauvres...
+                            Semaine après semaine, chacun est accueilli avec ses quêtes, ses questions, ses recherches,
+                            ses demandes de réponses
+                            sur la vie, sur le monde, sur les hommes et les femmes, et bien évidemment sur Dieu,
+                            l'Eternel, celui qui est plus grand que les vivants.
+                            C'est ainsi qu'ensemble nous cheminons à la suite de Jésus Christ, en demandant, en
+                            cherchant, en frappant.
+                        </p>
+                    </div>
+                    <h2>Eurêka !</h2>
+                    <p>
+                        Et, parce que nos portes vous sont ouvertes, nul doute que vous trouverez vos propres réponses.
+                        "<i>J'ai cherché l'Eternel, et il m'a répondu ;
+                            Il m'a délivré de toutes mes peurs</i>", dit un autre verset. (Ps 34,4)
+                        Qu'il en soit de même pour vous !
+                    </p>
+                    </p>
+                    <!-- <p>
                 Nous vous souhaitons la bienvenue parmi nous. suppression BD  -->
-                <!-- Remplacement par -->
-                <p>
-                     Nous vous souhaitons la bienvenue parmi nous.</p>
-                     <!-- ajout balise</p> fermante -->
-            </div>
-
-            <!-- SECTION CALENDAR -->
-            <section class="calendar">
-                <div class="calendar-logo-button">
-                    <i class="fas fa-calendar-alt"></i>
-                    <button class="favorite styled_button" type="button">
-                        <a href="messages/message hiver 2023-2024-97.pdf#page=9&zoom=70"
-                            alt="Bouton Calendrier des cultes" title="Bouton Calendrier des cultes" target="_blank">
-                            Calendrier des cultes
-                        </a>
-                    </button>
+                    <!-- Remplacement par -->
+                    <p>
+                        Nous vous souhaitons la bienvenue parmi nous.</p>
+                    <!-- ajout balise</p> fermante -->
                 </div>
-                <!-- <div class="box-container">
+
+                <!-- SECTION CALENDAR -->
+                <section class="calendar">
+                    <div class="calendar-logo-button">
+                        <i class="fas fa-calendar-alt"></i>
+                        <button class="favorite styled_button" type="button">
+                            <a href="messages/message hiver 2023-2024-97.pdf#page=9&zoom=70"
+                                alt="Bouton Calendrier des cultes" title="Bouton Calendrier des cultes" target="_blank">
+                                Calendrier des cultes
+                            </a>
+                        </button>
+                    </div>
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">17</p>
@@ -282,7 +297,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">17</p>
@@ -297,7 +312,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">17</p>
@@ -312,7 +327,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">12</p>
@@ -328,7 +343,7 @@
                     </div>
                 </div> -->
 
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">21</p>
@@ -343,7 +358,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">5</p>
@@ -358,7 +373,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">09</p>
@@ -373,7 +388,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">11</p>
@@ -388,7 +403,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">04</p>
@@ -403,7 +418,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">20</p>
@@ -418,22 +433,22 @@
                         </div>
                     </div>
                 </div> -->
-                <div class="box-container">
-                    <div class="box-calendar">
-                        <div class="date-box">
-                            <p class="day">19</p>
-                            <p class="month">MARS</p>
-                        </div>
-                        <div class="info-box">
-                            <div class="clock">
-                                <i class="far fa-clock"></i>
-                                <p class="hour">12 h 00</p>
+                    <div class="box-container">
+                        <div class="box-calendar">
+                            <div class="date-box">
+                                <p class="day">19</p>
+                                <p class="month">MARS</p>
                             </div>
-                            <h3 class="date-title">Repas de l'Entraide (Crest)</h3>
+                            <div class="info-box">
+                                <div class="clock">
+                                    <i class="far fa-clock"></i>
+                                    <p class="hour">12 h 00</p>
+                                </div>
+                                <h3 class="date-title">Repas de l'Entraide (Crest)</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">23</p>
@@ -448,37 +463,37 @@
                         </div>
                     </div>
                 </div> -->
-                <div class="box-container">
-                    <div class="box-calendar">
-                        <div class="date-box">
-                            <p class="day">19</p>
-                            <p class="month">MARS</p>
-                        </div>
-                        <div class="info-box">
-                            <div class="clock">
-                                <i class="far fa-clock"></i>
-                                <p class="hour">14 h 00</p>
+                    <div class="box-container">
+                        <div class="box-calendar">
+                            <div class="date-box">
+                                <p class="day">19</p>
+                                <p class="month">MARS</p>
                             </div>
-                            <h3 class="date-title">Ateliers créatifs (Crest)</h3>
+                            <div class="info-box">
+                                <div class="clock">
+                                    <i class="far fa-clock"></i>
+                                    <p class="hour">14 h 00</p>
+                                </div>
+                                <h3 class="date-title">Ateliers créatifs (Crest)</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="box-container">
-                    <div class="box-calendar">
-                        <div class="date-box">
-                            <p class="day">19</p>
-                            <p class="month">MARS</p>
-                        </div>
-                        <div class="info-box">
-                            <div class="clock">
-                                <i class="far fa-clock"></i>
-                                <p class="hour">18 h 00</p>
+                    <div class="box-container">
+                        <div class="box-calendar">
+                            <div class="date-box">
+                                <p class="day">19</p>
+                                <p class="month">MARS</p>
                             </div>
-                            <h3 class="date-title">Réunion de prière (Crest)</h3>
+                            <div class="info-box">
+                                <div class="clock">
+                                    <i class="far fa-clock"></i>
+                                    <p class="hour">18 h 00</p>
+                                </div>
+                                <h3 class="date-title">Réunion de prière (Crest)</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">21</p>
@@ -493,7 +508,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">05</p>
@@ -508,67 +523,67 @@
                         </div>
                     </div>
                 </div> -->
-                <div class="box-container">
-                    <div class="box-calendar">
-                        <div class="date-box">
-                            <p class="day">20</p>
-                            <p class="month">MARS</p>
-                        </div>
-                        <div class="info-box">
-                            <div class="clock">
-                                <i class="far fa-clock"></i>
-                                <p class="hour">14 h 00</p>
+                    <div class="box-container">
+                        <div class="box-calendar">
+                            <div class="date-box">
+                                <p class="day">20</p>
+                                <p class="month">MARS</p>
                             </div>
-                            <h3 class="date-title">Bible et partage en EHPAD (Armorin, Crest)</h3>
+                            <div class="info-box">
+                                <div class="clock">
+                                    <i class="far fa-clock"></i>
+                                    <p class="hour">14 h 00</p>
+                                </div>
+                                <h3 class="date-title">Bible et partage en EHPAD (Armorin, Crest)</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="box-container">
-                    <div class="box-calendar">
-                        <div class="date-box">
-                            <p class="day">20</p>
-                            <p class="month">MARS</p>
-                        </div>
-                        <div class="info-box">
-                            <div class="clock">
-                                <i class="far fa-clock"></i>
-                                <p class="hour">15 h 00</p>
+                    <div class="box-container">
+                        <div class="box-calendar">
+                            <div class="date-box">
+                                <p class="day">20</p>
+                                <p class="month">MARS</p>
                             </div>
-                            <h3 class="date-title">Service funèbre de Mme Maryse BOYER au temple (Crest)</h3>
+                            <div class="info-box">
+                                <div class="clock">
+                                    <i class="far fa-clock"></i>
+                                    <p class="hour">15 h 00</p>
+                                </div>
+                                <h3 class="date-title">Service funèbre de Mme Maryse BOYER au temple (Crest)</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="box-container">
-                    <div class="box-calendar">
-                        <div class="date-box">
-                            <p class="day">20</p>
-                            <p class="month">MARS</p>
-                        </div>
-                        <div class="info-box">
-                            <div class="clock">
-                                <i class="far fa-clock"></i>
-                                <p class="hour">15 h 45</p>
+                    <div class="box-container">
+                        <div class="box-calendar">
+                            <div class="date-box">
+                                <p class="day">20</p>
+                                <p class="month">MARS</p>
                             </div>
-                            <h3 class="date-title">Bible et partage en EHPAD (Flamants, Crest)</h3>
+                            <div class="info-box">
+                                <div class="clock">
+                                    <i class="far fa-clock"></i>
+                                    <p class="hour">15 h 45</p>
+                                </div>
+                                <h3 class="date-title">Bible et partage en EHPAD (Flamants, Crest)</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="box-container">
-                    <div class="box-calendar">
-                        <div class="date-box">
-                            <p class="day">20</p>
-                            <p class="month">MARS</p>
-                        </div>
-                        <div class="info-box">
-                            <div class="clock">
-                                <i class="far fa-clock"></i>
-                                <p class="hour">18 h 30</p>
+                    <div class="box-container">
+                        <div class="box-calendar">
+                            <div class="date-box">
+                                <p class="day">20</p>
+                                <p class="month">MARS</p>
                             </div>
-                            <h3 class="date-title">Halte spirituelle (Crest)</h3>
+                            <div class="info-box">
+                                <div class="clock">
+                                    <i class="far fa-clock"></i>
+                                    <p class="hour">18 h 30</p>
+                                </div>
+                                <h3 class="date-title">Halte spirituelle (Crest)</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">07</p>
@@ -583,7 +598,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">15</p>
@@ -598,22 +613,22 @@
                         </div>
                     </div>
                 </div> -->
-                <div class="box-container">
-                    <div class="box-calendar">
-                        <div class="date-box">
-                            <p class="day">21</p>
-                            <p class="month">MARS</p>
-                        </div>
-                        <div class="info-box">
-                            <div class="clock">
-                                <i class="far fa-clock"></i>
-                                <p class="hour">14 h 00</p>
+                    <div class="box-container">
+                        <div class="box-calendar">
+                            <div class="date-box">
+                                <p class="day">21</p>
+                                <p class="month">MARS</p>
                             </div>
-                            <h3 class="date-title">Impression du journal Message de printemps (Crest)</h3>
+                            <div class="info-box">
+                                <div class="clock">
+                                    <i class="far fa-clock"></i>
+                                    <p class="hour">14 h 00</p>
+                                </div>
+                                <h3 class="date-title">Impression du journal Message de printemps (Crest)</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">1</p>
@@ -628,7 +643,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">7</p>
@@ -643,7 +658,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">07</p>
@@ -658,7 +673,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">15</p>
@@ -673,7 +688,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">15</p>
@@ -688,7 +703,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">2</p>
@@ -703,7 +718,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">18</p>
@@ -718,7 +733,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">01</p>
@@ -733,22 +748,22 @@
                         </div>
                     </div>
                 </div> -->
-                <div class="box-container">
-                    <div class="box-calendar">
-                        <div class="date-box">
-                            <p class="day">22</p>
-                            <p class="month">MARS</p>
-                        </div>
-                        <div class="info-box">
-                            <div class="clock">
-                                <i class="far fa-clock"></i>
-                                <p class="hour">18 h 45</p>
+                    <div class="box-container">
+                        <div class="box-calendar">
+                            <div class="date-box">
+                                <p class="day">22</p>
+                                <p class="month">MARS</p>
                             </div>
-                            <h3 class="date-title">Sacré Petit Chœur (Crest)</h3>
+                            <div class="info-box">
+                                <div class="clock">
+                                    <i class="far fa-clock"></i>
+                                    <p class="hour">18 h 45</p>
+                                </div>
+                                <h3 class="date-title">Sacré Petit Chœur (Crest)</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">23</p>
@@ -763,7 +778,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">28</p>
@@ -778,7 +793,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">10</p>
@@ -793,7 +808,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">09</p>
@@ -808,7 +823,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">20</p>
@@ -825,22 +840,22 @@
                         </div>
                     </div>
                 </div> -->
-                <div class="box-container">
-                    <div class="box-calendar">
-                        <div class="date-box">
-                            <p class="day">23</p>
-                            <p class="month">MARS</p>
-                        </div>
-                        <div class="info-box">
-                            <div class="clock">
-                                <i class="far fa-clock"></i>
-                                <p class="hour">17 h 45</p>
+                    <div class="box-container">
+                        <div class="box-calendar">
+                            <div class="date-box">
+                                <p class="day">23</p>
+                                <p class="month">MARS</p>
                             </div>
-                            <h3 class="date-title">Sacré Petit Orchestre (Crest)</h3>
+                            <div class="info-box">
+                                <div class="clock">
+                                    <i class="far fa-clock"></i>
+                                    <p class="hour">17 h 45</p>
+                                </div>
+                                <h3 class="date-title">Sacré Petit Orchestre (Crest)</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">20</p>
@@ -855,7 +870,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">30</p>
@@ -870,22 +885,22 @@
                         </div>
                     </div>
                 </div> -->
-                <div class="box-container">
-                    <div class="box-calendar">
-                        <div class="date-box">
-                            <p class="day">24</p>
-                            <p class="month">MARS</p>
-                        </div>
-                        <div class="info-box">
-                            <div class="clock">
-                                <i class="far fa-clock"></i>
-                                <p class="hour">10 h 30</p>
+                    <div class="box-container">
+                        <div class="box-calendar">
+                            <div class="date-box">
+                                <p class="day">24</p>
+                                <p class="month">MARS</p>
                             </div>
-                            <h3 class="date-title">Culte-familles (Rameaux) au temple de Beaufort (JPB)</h3>
+                            <div class="info-box">
+                                <div class="clock">
+                                    <i class="far fa-clock"></i>
+                                    <p class="hour">10 h 30</p>
+                                </div>
+                                <h3 class="date-title">Culte-familles (Rameaux) au temple de Beaufort (JPB)</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">17</p>
@@ -900,7 +915,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">28</p>
@@ -915,7 +930,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">3</p>
@@ -930,7 +945,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">11</p>
@@ -945,7 +960,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">17</p>
@@ -960,7 +975,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="box-container">
+                    <!-- <div class="box-container">
                     <div class="box-calendar">
                         <div class="date-box">
                             <p class="day">01</p>
@@ -976,48 +991,50 @@
                     </div>
                 </div> -->
 
-                </div>
-            </section>
-            <!-- EVENEMENT AFFICHE -->
-            <!-- <div class="evenement">
+                    </div>
+                </section>
+                <!-- EVENEMENT AFFICHE -->
+                <!-- <div class="evenement">
                 <img class="img-evenement" src="./assets/images/affiche_soupe_au_lard_2023.jpg"
                     alt="Affiche soupe au lard 2023" title="Affiche soupe au lard 2023" width="100%" />
             </div> -->
-            <!-- <div class="evenement">
+                <!-- <div class="evenement">
                 <img class="img-evenement" src="./assets/images/Eglise verte - rencontre découverte 2023.jpg"
                     alt="Affiche Eglise verte - rencontre découverte 2023" title="Affiche Eglise verte - rencontre découverte 2023" width="100%" />
             </div> -->
-            <!-- <div class="evenement">
+                <!-- <div class="evenement">
                 <a href="./assets/images/Happy Weekend (Flyer final)-1_compressed.pdf">
                     <img class="img-evenement"
                         src="./assets/images/Happy Weekend (Flyer final)-1_compressed_page-0001.jpg"
                         alt="Week-end intergénérationnel 2024" title="Week-end intergénérationnel 2024" width="100%" />
                 </a>
             </div> -->
-            <div class="evenement">
-                <img class="img-evenement" src="./assets/images/Affiche concert Karumanta trio de Patagonie 2024.webp"
-                    alt="Affiche concert Karumanta trio de Patagonie 2024"
-                    title="Affiche concert Karumanta trio de Patagonie 2024" width="100%" />
-            </div>
-            <!-- <div class="evenement">
+                <div class="evenement">
+                    <img class="img-evenement"
+                        src="./assets/images/Affiche concert Karumanta trio de Patagonie 2024.webp"
+                        alt="Affiche concert Karumanta trio de Patagonie 2024"
+                        title="Affiche concert Karumanta trio de Patagonie 2024" width="100%" />
+                </div>
+                <!-- <div class="evenement">
                 <img class="img-evenement" src="./assets/images/JMP-2024-affiche-PRINT_.webp"
                     alt="Affiche Journée mondiale de prière 2024" title="Affiche Journée mondiale de prière 2024"
                     width="100%" />
             </div> -->
 
-        </section>
-    </main>
-    <footer>
-        <p>
-            <a href="mentions_légales.html">Mentions légales</a> | MAJ : 24/03/2024 | © 2024 EPU Crestois | Tous droits
-            réservés |
-            <a href="https://meteofrance.com/previsions-meteo-france/crest/26400" target="_blank"
-                onclick="ouvre(this.href);; return false;">
-                <i class="fas fa-cloud"></i></a>
-            Météo | v. 2.2 | Conception : NB-BD
-        </p>
-    </footer>
-    <!-- <script src="js/script.js"></script> -->
-</body>
+            </section>
+        </main>
+        <footer>
+            <p>
+                <a href="mentions_légales.html">Mentions légales</a> | MAJ : 24/03/2024 | © 2024 EPU Crestois | Tous
+                droits
+                réservés |
+                <a href="https://meteofrance.com/previsions-meteo-france/crest/26400" target="_blank"
+                    onclick="ouvre(this.href);; return false;">
+                    <i class="fas fa-cloud"></i></a>
+                Météo | v. 2.2 | Conception : NB-BD
+            </p>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
 
 </html>

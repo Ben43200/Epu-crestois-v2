@@ -11,7 +11,7 @@
     <link href="assets/images/favicon.ico" rel="shortcut icon" />
 
 
-
+<!-- 
     <meta http-equiv="Content-Security-Policy" content="default-src 'self';
     script-src 'report-sample' 'self' https://kit.fontawesome.com/a528402c70.js 'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE=' 'nonce-rAnd0m';
     style-src 'unsafe-inline';
@@ -24,17 +24,17 @@
     manifest-src 'self';
     media-src 'self';
     form-action 'self';
-    worker-src 'none';">
+    worker-src 'none';"> -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
 
-
-    <script src="https://kit.fontawesome.com/a528402c70.js"
+    <script src="https://kit.fontawesome.com/a528402c70.js" crossorigin="anonymous" defer></script>
+    <!-- <script src="https://kit.fontawesome.com/a528402c70.js"
         integrity="sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE= sha256-iuCZriBuybIR37PfHCwwGXnSHxztA7HX+V3wrDxSV10= sha256-Sltxz+gM4Ir/rDlcx+WW5I6b3fCnpk4KwgjoAfbRKDI="
-        nonce="rAnd0m" crossorigin="anonymous" defer></script>
+        nonce="rAnd0m" crossorigin="anonymous" defer></script> -->
         <!-- <script src="/js/script.js" crossorigin="anonymous" integrity="sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE= sha256-PfTEDHw1p5+RBDVsJTvmJH566jcXOUL1iEa2eoy+cQI=" nonce="rAnd0m"></script> -->
 </head>
 
-<!-- <body onload="fetchAsync()"> -->
+<body onload="fetchAsync()">
     <header>
         <div class="emplacement_logo">
             <a href="page_logo.html"><img src="./assets/images/mini_logo_epu-crestois_2022.jpg"
@@ -413,6 +413,8 @@
             Météo | Conception : NB-BD
         </p>
     </footer>
+    <script src="js/script.js"></script>
+
     
 </body>
 

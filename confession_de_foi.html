@@ -11,9 +11,9 @@
     <link href="assets/images/favicon.ico" rel="shortcut icon" />
 
 
-<!-- 
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self';
-    script-src 'report-sample' 'self' https://kit.fontawesome.com/a528402c70.js 'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE=' 'nonce-rAnd0m';
+    <!-- Code ok avec csp fontawesome mais sans script -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self';
+    script-src 'report-sample' 'self' https://kit.fontawesome.com/a528402c70.js 'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE=' 'nonce-rAnd0m' 'unsafe-inline' 'unsafe-eval' ;
     style-src 'unsafe-inline';
     object-src 'none';
     base-uri 'self';
@@ -25,13 +25,95 @@
     media-src 'self';
     form-action 'self';
     worker-src 'none';"> -->
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
+    <!-- fin code ok -->
+
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self';
+    script-src  'self' https://kit.fontawesome.com/a528402c70.js 'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE=' 'nonce-rAnd0m';
+    style-src 'unsafe-inline';
+    object-src 'none';
+    base-uri 'self';
+    connect-src 'self' https://ka-f.fontawesome.com;
+    font-src 'self' https://ka-f.fontawesome.com;
+    frame-src 'self';
+    img-src 'self';
+    manifest-src 'self';
+    media-src 'self';
+    form-action 'self';
+    worker-src 'none';"> -->
+
+
+
+    <!-- code ok pour local js -->
+    <!-- <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' ; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' 'unsafe-eval';"> -->
+    <!-- fin code ok pour local js -->
+
+
+    <!-- code ok pour local js -->
+    <!-- <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' ; script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://kit.fontawesome.com/; style-src 'self' 'unsafe-inline' 'unsafe-eval';"> -->
+    <!-- fin code ok pour local js -->
+    <!-- code ok pour local js -->
+
+
+
+<!-- Code ok pour tout -->
+
+
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self';
+        script-src 'self' 'unsafe-eval' https://kit.fontawesome.com/  'unsafe-inline' ; 
+        style-src 'unsafe-inline' ;
+        img-src 'self' data:;
+        font-src 'self' https://ka-f.fontawesome.com/  ;
+        media-src 'self' data: ;
+        frame-src 'self' ;
+        connect-src 'self' ws: https://ka-f.fontawesome.com/ ;
+        object-src 'none' ; 
+        base-uri 'self' data: ; 
+        ">
+
+
+
+        <!-- code ok pour tout -->
+    <!-- fin code ok pour local js -->
+
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE=';"> -->
 
     <script src="https://kit.fontawesome.com/a528402c70.js" crossorigin="anonymous" defer></script>
+
+    <!-- Bon code fontawesome csp -->
+
     <!-- <script src="https://kit.fontawesome.com/a528402c70.js"
         integrity="sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE= sha256-iuCZriBuybIR37PfHCwwGXnSHxztA7HX+V3wrDxSV10= sha256-Sltxz+gM4Ir/rDlcx+WW5I6b3fCnpk4KwgjoAfbRKDI="
         nonce="rAnd0m" crossorigin="anonymous" defer></script> -->
-        <!-- <script src="/js/script.js" crossorigin="anonymous" integrity="sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE= sha256-PfTEDHw1p5+RBDVsJTvmJH566jcXOUL1iEa2eoy+cQI=" nonce="rAnd0m"></script> -->
+
+    <!-- Fin bon code fontawesome csp -->
+
+
+    <!-- Essai fontawesome -->
+    <!-- 
+<script src="https://kit.fontawesome.com/a528402c70.js"
+integrity="sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE= sha256-iuCZriBuybIR37PfHCwwGXnSHxztA7HX+V3wrDxSV10= sha256-Sltxz+gM4Ir/rDlcx+WW5I6b3fCnpk4KwgjoAfbRKDI="
+nonce="rAnd0m" crossorigin="anonymous" defer></script> -->
+
+    <!-- fin essai fontawesome -->
+
+
+    <!-- <script src="/js/script.js" crossorigin="anonymous" integrity="sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE= sha256-PfTEDHw1p5+RBDVsJTvmJH566jcXOUL1iEa2eoy+cQI=" nonce="rAnd0m"></script> -->
+    <!-- <script src="/js/script.js" integrity="sha-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE=" defer></script> -->
+
+    <!-- Début chat gpt -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE=';">
+    
+<script src="https://kit.fontawesome.com/a528402c70.js" crossorigin="anonymous" defer></script>
+
+<script src="/js/script.js" integrity="sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE=" crossorigin="anonymous" defer></script> -->
+
+    <!-- Fin chat gpt -->
+
+
+
 </head>
 
 <body onload="fetchAsync()">
@@ -415,7 +497,7 @@
     </footer>
     <script src="js/script.js"></script>
 
-    
+
 </body>
 
 </html>

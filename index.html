@@ -19,13 +19,20 @@
         frame-src 'self' ;
         connect-src 'self' ws: https://ka-f.fontawesome.com/ ;
         object-src 'none' ; 
-        base-uri 'self' data: ; 
+        base-uri 'self' data: ;
+        form-action 'self' ; 
+        frame-ancestors 'none' ;
         ">
-        <!-- Fin code à intégrer à toutes les pages -->
-    <!-- <script src="https://kit.fontawesome.com/a528402c70.js" crossorigin="anonymous" defer></script> -->
+      
+
+
+    <!-- lignes à rajouter avec integrity -->
         <script src="https://kit.fontawesome.com/a528402c70.js"
         integrity="sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE= sha256-iuCZriBuybIR37PfHCwwGXnSHxztA7HX+V3wrDxSV10= sha256-Sltxz+gM4Ir/rDlcx+WW5I6b3fCnpk4KwgjoAfbRKDI="
         nonce="rAnd0m" crossorigin="anonymous" defer></script>
+  <!-- Fin code à intégrer à toutes les pages -->
+          <!-- ligne à supprimer de toutes les pages à remplacer par les lignes avec integrity d'au-dessus -->
+    <!-- <script src="https://kit.fontawesome.com/a528402c70.js" crossorigin="anonymous" defer></script> -->
 </head>
 
 <body onload="fetchAsync()">

@@ -1186,13 +1186,19 @@ h4 {
 }
 
 .actualite-content {
-  background: linear-gradient(to left, rgb(255,255,255), #000000);
+  display: block;
+  background: linear-gradient(to right, black, transparent);
+  color: transparent;
   background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 500;
+  @media screen and (max-width: 900px) {
+    background: linear-gradient(to bottom, black, transparent);
+    color: transparent;
+  background-clip: text;
+  display: block;
   opacity: 0.9;
+  }
 }
+
 
 
 

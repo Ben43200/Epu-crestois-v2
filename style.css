@@ -1184,8 +1184,7 @@ h4 {
   font-weight: normal;
   font-size: 0.9rem;
 }
-
-.actualite-content {
+.acualite-content {
   background: linear-gradient(to left, rgb(255,255,255), #000000);
   background-clip: text;
   -webkit-background-clip: text;

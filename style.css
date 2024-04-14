@@ -1,10 +1,7 @@
 @charset "UTF-8";
 
 /* couleur lie de vin */
-* {
-  /* remember to define focus styles! */
-  /* tables still need 'cellspacing="0"' in the markup */
-}
+
 
 * html,
 * body,
@@ -1184,14 +1181,23 @@ h4 {
   font-weight: normal;
   font-size: 0.9rem;
 }
-.acualite-content {
-  background: linear-gradient(to left, rgb(255,255,255), #000000);
+.actualite-content {
+  display: block;
+  background: linear-gradient(to right, black, transparent);
+  color: transparent;
   background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-weight: 500;
   opacity: 0.9;
+  @media screen and (max-width: 900px) {
+    background: linear-gradient(to bottom, black, transparent);
+    color: transparent;
+  background-clip: text;
+  display: block;
+
+  }
 }
+
+
 
 
 /* ajout class css second content et padding pour remplacer le <p></br></p> de l'html ligne 152 */

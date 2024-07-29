@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Église protestante unie du Crestois</title>
+    <link href="assets/images/favicon.ico" rel="shortcut icon" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="contactv3.php" method="post">
+      <!-- Mail : <input type="text" name="mail">
+    <br>
+    Sujet : <input type="text" name="sujet">
+    <br>
+    Message : <textarea name="message" cols="40" rows="20"></textarea>
+    <br> -->
+      <fieldset>
+        <label>Email</label>
+        <input type="email" name="mail" placeholder="Enter Email" />
+      </fieldset>
+      <fieldset>
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Enter Name" />
+      </fieldset>
+      <fieldset>
+        <label>Mobile</label>
+        <input type="text" name="phone" placeholder="Enter Mobile" />
+      </fieldset>
+      <fieldset>
+        <label>Sujet</label>
+        <input type="text" name="sujet" placeholder="Enter Name" />
+      </fieldset>
+      <fieldset>
+        <label>Message</label>
+        <textarea name="message" placeholder="Type your Message..."></textarea>
+      </fieldset>
+      <input
+        type="submit"
+        name="envoyer"
+        value="Envoyer"
+        class="favorite styled_button"
+      />
+    </form>
+  </body>
+</html>

@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
-/* couleur lie de vin */
-
+* {
+  /* remember to define focus styles! */
+  /* tables still need 'cellspacing="0"' in the markup */
+}
 
 * html,
 * body,
@@ -361,10 +363,11 @@ header {
   box-shadow: rgb(158, 169, 212) 5.76px 5.76px 5.76px;
   border: 1.92px solid rgb(213, 5, 81);
   -o-border-image: initial;
-     border-image: initial;
+  border-image: initial;
   border-radius: 5.76px;
   padding: 10px;
 }
+
 @media screen and (min-width: 768px) {
   header {
     grid-template-areas: "logo citation adresse" "nav nav nav";
@@ -414,6 +417,7 @@ header {
   font-weight: 600;
   grid-area: citation;
 }
+
 @media screen and (min-width: 768px) {
   #quote {
     display: flex;
@@ -426,6 +430,7 @@ header {
 .mini_logo {
   height: 50px;
 }
+
 @media screen and (min-width: 768px) {
   .mini_logo {
     height: 100%;
@@ -475,7 +480,8 @@ header {
   height: 35px;
   color: black;
   background-color: #317f92;
-  background-color: #e26a8d; /* couleur lie de vin */
+  background-color: #e26a8d;
+  /* couleur lie de vin */
   border-color: #9ea9d4 #c90052 #c90052 #9ea9d4;
   border: 1.92px #fae800 solid;
   font-weight: bold;
@@ -512,12 +518,14 @@ header {
 
 @media screen and (min-width: 768px) {
   .menu>li>ul>li>a {
-    background-color: #e26a8d; /* couleur lie de vin */
+    background-color: #e26a8d;
+    /* couleur lie de vin */
   }
 }
 
 .menu>li>ul>li>a:hover {
-  background-color: #e26a8d; /* couleur lie de vin */
+  background-color: #e26a8d;
+  /* couleur lie de vin */
 }
 
 @media screen and (min-width: 768px) {
@@ -610,7 +618,8 @@ img {
 }
 
 .slides {
-  width: 700%; /*100% par nb d'images*/
+  width: 700%;
+  /*100% par nb d'images*/
   position: relative;
   height: 100%;
   display: flex;
@@ -667,6 +676,7 @@ img {
   70% {
     left: -500%;
   }
+
   74% {
     left: -500%;
   }
@@ -674,6 +684,7 @@ img {
   85% {
     left: -600%;
   }
+
   89% {
     left: -600%;
   }
@@ -682,6 +693,7 @@ img {
     left: 0%;
   }
 }
+
 /* @keyframes slider {
   0% {
     left: 0%;
@@ -743,7 +755,7 @@ footer {
   height: 2rem;
 }
 
-footer > p > a {
+footer>p>a {
   color: black;
   font-weight: 600;
   text-decoration: underline;
@@ -773,6 +785,23 @@ footer > p > a {
   border-radius: 5.76px;
   box-shadow: rgb(158, 169, 212) 5.76px 5.76px 5.76px;
 }
+
+/* ANCIEN
+.slider_diapo {
+  overflow: hidden;
+  border: 1.92px solid rgb(213, 5, 81);
+  border-radius: 5.76px;
+  box-shadow: rgb(158, 169, 212) 5.76px 5.76px 5.76px;
+  grid-area: carousel;
+  height: 280px;
+}
+*/
+@media screen and (min-width: 768px) {
+  .slider_diapo {
+    height: 360px;
+  }
+}
+
 
 .slides_diapo {
   width: 4000%;
@@ -1181,32 +1210,88 @@ h4 {
   font-weight: normal;
   font-size: 0.9rem;
 }
-.actualite-content {
+
+
+/* .actualite-content {
   display: block;
   background: linear-gradient(to right, black, transparent);
   color: transparent;
   background-clip: text;
   font-weight: 500;
   opacity: 0.9;
+
   @media screen and (max-width: 900px) {
     background: linear-gradient(to bottom, black, transparent);
     color: transparent;
-  background-clip: text;
-  display: block;
+    background-clip: text;
+    display: block;
+  }
+} */
+/* 
+.fade-text {
+  background: linear-gradient(to right, black 100%, transparent 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+  white-space: pre-wrap; /* Permet de conserver les sauts de ligne */
+  /* overflow: hidden; Cache le texte qui dépasse */
+/* } */ 
 
+
+
+/* .actualite-content {
+  position: relative;
+  /* display: inline-block; */
+  /* display: block; */
+   /* width: 100%;  Assurez-vous que le conteneur prend toute la largeur disponible */
+/* } */
+
+/* .fade-text {
+  background: linear-gradient(to right, black 70%, transparent 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+  white-space: pre-wrap; /* Permet de conserver les sauts de ligne */
+  /* overflow: hidden; Cache le texte qui dépasse */
+/* }  */ 
+
+/* nouvel essai avec javascript */
+.fade-text {
+  display: inline-block;
+  /* white-space: nowrap; Empêche le texte de se casser en plusieurs lignes */
+  position: relative;
+  z-index: 1;
+  color: black; /* Couleur du texte par défaut */
+  overflow: hidden; /* Cache le texte qui dépasse */
+}
+
+.fade-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 120px; /* Largeur fixe du dégradé */
+  /* background: linear-gradient(to right,rgba(255, 255, 255, 1) 0%, transparent 100%); */
+  /* background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%); */
+  pointer-events: none;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  z-index: 2;
+}
+
+ @media (max-width: 400px) {
+  .fade-text {
+    max-width: calc(120ch + 50px); /* Limite la largeur à 120 caractères + largeur du dégradé */
   }
 }
 
+@media (min-width: 400px) {
+  .fade-text {
+    max-width: calc(100ch + 50px); /* Limite la largeur à 100 caractères + largeur du dégradé */
+ } 
+} 
 
-
-
-/* ajout class css second content et padding pour remplacer le <p></br></p> de l'html ligne 152 */
-
-.second-content{
-  padding-bottom:15px;
-}
-
-
+/* fin esssai */
 
 .styled_button {
   border: 0;
@@ -1219,9 +1304,6 @@ h4 {
   border-radius: 5.76px;
   background-color: #da1671;
   margin-top: 10px;
-
-  margin-bottom: 10px; /*proposition pour avoir le même espace en haut et en bas du button**/
-  
   box-shadow: inset 0.1vw 0.1vw 0.2vw rgba(255, 255, 255, 0.6), inset -0.1vw -0.1vw 0.2vw rgba(0, 0, 0, 0.6);
 }
 
@@ -1262,13 +1344,7 @@ h4 {
 }
 
 #boite>p {
-  /* propositions  */
-  /* code actuel */
-  /* margin:6px; */
-  /* remplacement par */
-  margin-top: 6px;
-
-
+  margin: 6px;
 }
 
 /* Ajout BD  léger padding entre les li des ol pour que ça soit un peu plus aéré*/
@@ -1332,9 +1408,570 @@ h4 {
     font-size: 1em;
   }
 }
-/* ajout class pour effet sur liste dans confession de foi notamment */
-.boite-list{
-  margin-top:6px;
-}
 
 /*# sourceMappingURL=style.css.map */
+
+/* MISE EN FORME DES TABLEAUX */
+i.fas {
+  min-width: 20px;
+}
+
+.light {
+  color: #fff;
+}
+
+.active {
+  color: #00d;
+}
+
+table.tritable {
+  margin: 5px;
+  border-collapse: collapse;
+  border: 1.92px solid rgb(213, 5, 81);
+}
+
+table.tritable th {
+  font-size: 15px;
+  border: 1.92px solid rgb(213, 5, 81);
+  padding: 4px;
+  cursor: pointer;
+  background-color: #e26a8d;
+  text-align: center;
+}
+
+table.tritable td {
+  font-size: 14px;
+  border: 1px solid rgb(213, 5, 81);
+  padding: 4px;
+  text-align: center;
+}
+.slider_diapo_WE {
+  font-size: 0;
+  width: 640px;
+  overflow: hidden;
+  border: 1.92px solid rgb(213, 5, 81);
+  border-radius: 5.76px;
+  box-shadow: rgb(158, 169, 212) 5.76px 5.76px 5.76px;
+}
+
+@media screen and (min-width: 768px) {
+  .slider_diapo_WE {
+    height: 360px;
+  }
+}
+
+/* .slider_diapo_WE {
+  overflow: hidden;
+  border: 1.92px solid rgb(213, 5, 81);
+  border-radius: 5.76px;
+  box-shadow: rgb(158, 169, 212) 5.76px 5.76px 5.76px;
+  grid-area: carousel;
+  height: 280px;
+} */
+
+
+/* @media screen and (min-width: 768px) {
+  .slider_diapo_WE {
+    height: 462px;
+  }
+} */
+
+.slides_diapo_WE {
+  width: 6000%;
+  /*100% par nb d'images*/
+  position: relative;
+  float: left;
+  animation: slider_diapo_WE 150s infinite;
+}
+
+.slide_diapo_WE {
+  width: 1.66666667%;
+  /*100 divisé par le nb de photos*/
+  height: 360px;
+}
+
+@keyframes slider_diapo_WE {
+  0% {
+    left: 0%;
+  }
+
+  .33% {
+    left: 0%;
+  }
+
+  1.66% {
+    left: -100%;
+  }
+
+  2% {
+    left: -100%;
+  }
+
+  3.33% {
+    left: -200%;
+  }
+
+  3.66% {
+    left: -200%;
+  }
+
+  5% {
+    left: -300%;
+  }
+
+  5.33% {
+    left: -300%;
+  }
+
+  6.66% {
+    left: -400%;
+  }
+
+  7% {
+    left: -400%;
+  }
+
+  8.33% {
+    left: -500%;
+  }
+
+  8.66% {
+    left: -500%;
+  }
+
+  10% {
+    left: -600%;
+  }
+
+  10.33% {
+    left: -600%;
+  }
+
+  11.66% {
+    left: -700%;
+  }
+
+  12% {
+    left: -700%;
+  }
+
+  13.33% {
+    left: -800%;
+  }
+
+  13.66% {
+    left: -800%;
+  }
+
+  15% {
+    left: -900%;
+  }
+
+  15.33% {
+    left: -900%;
+  }
+
+  16.66% {
+    left: -1000%;
+  }
+
+  17% {
+    left: -1000%;
+  }
+
+  18.33% {
+    left: -1100%;
+  }
+
+  18.66% {
+    left: -1100%;
+  }
+
+  20% {
+    left: -1200%;
+  }
+
+  20.33% {
+    left: -1200%;
+  }
+
+  21.66% {
+    left: -1300%;
+  }
+
+  22% {
+    left: -1300%;
+  }
+
+  23.33% {
+    left: -1400%;
+  }
+
+  23.66% {
+    left: -1400%;
+  }
+
+  25% {
+    left: -1500%;
+  }
+
+  25.33% {
+    left: -1500%;
+  }
+
+  26.66% {
+    left: -1600%;
+  }
+
+  27% {
+    left: -1600%;
+  }
+
+  28.33% {
+    left: -1700%;
+  }
+
+  28.66% {
+    left: -1700%;
+  }
+
+  30% {
+    left: -1800%;
+  }
+
+  30.33% {
+    left: -1800%;
+  }
+
+  31.66% {
+    left: -1900%;
+  }
+
+  32% {
+    left: -1900%;
+  }
+
+  33.33% {
+    left: -2000%;
+  }
+
+  33.66% {
+    left: -2000%;
+  }
+
+  35% {
+    left: -2100%;
+  }
+
+  35.33% {
+    left: -2100%;
+  }
+
+  36.66% {
+    left: -2200%;
+  }
+
+  37% {
+    left: -2200%;
+  }
+
+  38.33% {
+    left: -2300%;
+  }
+
+  38.66% {
+    left: -2300%;
+  }
+
+  40% {
+    left: -2400%;
+  }
+
+  40.33% {
+    left: -2400%;
+  }
+
+  41.66% {
+    left: -2500%;
+  }
+
+  42% {
+    left: -2500%;
+  }
+
+  43.33% {
+    left: -2600%;
+  }
+
+  43.66% {
+    left: -2600%;
+  }
+
+  45% {
+    left: -2700%;
+  }
+
+  45.33% {
+    left: -2700%;
+  }
+
+  46.66% {
+    left: -2800%;
+  }
+
+  47% {
+    left: -2800%;
+  }
+
+  48.33% {
+    left: -2900%;
+  }
+
+  48.66% {
+    left: -2900%;
+  }
+
+  50% {
+    left: -3000%;
+  }
+
+  50.33% {
+    left: -3000%;
+  }
+
+  51.66% {
+    left: -3100%;
+  }
+
+  52% {
+    left: -3100%;
+  }
+
+  53.33% {
+    left: -3200%;
+  }
+
+  53.66% {
+    left: -3200%;
+  }
+
+  55% {
+    left: -3300%;
+  }
+
+  55.33% {
+    left: -3300%;
+  }
+
+  56.33% {
+    left: -3400%;
+  }
+
+  57% {
+    left: -3400%;
+  }
+
+  58.33% {
+    left: -3500%;
+  }
+
+  58.66% {
+    left: -3500%;
+  }
+
+  60% {
+    left: -3600%;
+  }
+
+  60.33% {
+    left: -3600%;
+  }
+
+  61.66% {
+    left: -3700%;
+  }
+
+  62% {
+    left: -3700%;
+  }
+
+  63.33% {
+    left: -3800%;
+  }
+
+  63.66% {
+    left: -3800%;
+  }
+
+  65% {
+    left: -3900%;
+  }
+
+  65.33% {
+    left: -3900%;
+  }
+
+  66.66% {
+    left: -4000%;
+  }
+
+  67% {
+    left: -4000%;
+  }
+
+  68.33% {
+    left: -4100%;
+  }
+
+  68.66% {
+    left: -4100%;
+  }
+
+  70% {
+    left: -4200%;
+  }
+
+  70.33% {
+    left: -4200%;
+  }
+
+  71.66% {
+    left: -4300%;
+  }
+
+  72% {
+    left: -4300%;
+  }
+
+  73.33% {
+    left: -4400%;
+  }
+
+  73.66% {
+    left: -4400%;
+  }
+
+  75% {
+    left: -4500%;
+  }
+
+  75.33% {
+    left: -4500%;
+  }
+
+  76.66% {
+    left: -4600%;
+  }
+
+  77% {
+    left: -4600%;
+  }
+
+  78.33% {
+    left: -4700%;
+  }
+
+  78.66% {
+    left: -4700%;
+  }
+
+  80% {
+    left: -4800%;
+  }
+
+  80.33% {
+    left: -4800%;
+  }
+
+  81.66% {
+    left: -4900%;
+  }
+
+  82% {
+    left: -4900%;
+  }
+
+  83.33% {
+    left: -5000%;
+  }
+
+  83.66% {
+    left: -5000%;
+  }
+
+  85% {
+    left: -5100%;
+  }
+
+  85.33% {
+    left: -5100%;
+  }
+
+  86.66% {
+    left: -5200%;
+  }
+
+  87% {
+    left: -5200%;
+  }
+
+  88.33% {
+    left: -5300%;
+  }
+
+  88.66% {
+    left: -5300%;
+  }
+
+  90% {
+    left: -5400%;
+  }
+
+  90.33% {
+    left: -5400%;
+  }
+
+  91.66% {
+    left: -5500%;
+  }
+
+  92% {
+    left: -5500%;
+  }
+
+  93.33% {
+    left: -5600%;
+  }
+
+  93.66% {
+    left: -5600%;
+  }
+
+  95% {
+    left: -5700%;
+  }
+
+  95.33% {
+    left: -5700%;
+  }
+
+  96.66% {
+    left: -5800%;
+  }
+
+  97% {
+    left: -5800%;
+  }
+
+  98.33% {
+    left: -5900%;
+  }
+
+  98.66% {
+    left: -5900%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}

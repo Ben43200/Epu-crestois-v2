@@ -1,7 +1,7 @@
 // async function
 const fetchAsync = async () => {
   // await response of fetch call
-  let response = await fetch("/citations.json");
+  let response = await fetch("./citations.json");
   // only proceed once promise is resolved
   let data = await response.json();
   // calcul alÃ©atoire et implÃ©mentation de la citation au chargement de la page
